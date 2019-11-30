@@ -1,0 +1,9 @@
+# python compiled
+*.pyc
+obj/*.pkl
+# intermediate data files
+similarity_*.txt
+stat_*.txt
+# local working files
+summary.json
+Untitled.ipynb

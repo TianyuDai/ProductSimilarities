@@ -1,0 +1,8 @@
+# http://cseweb.ucsd.edu/~jmcauley/datasets.html#steam_data
+
+Summary:
+Num of user: 69304
+Num of items: 32133
+Total number of items record: 4294257
+
+Data has been preprocessed such that only the record of items that exist in the steam_games_lite are preserved, and each user has at least one item.
