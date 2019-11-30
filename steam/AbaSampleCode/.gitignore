@@ -7,3 +7,4 @@ stat_*.txt
 # local working files
 summary.json
 Untitled.ipynb
+.ipynb_checkpoints/*
