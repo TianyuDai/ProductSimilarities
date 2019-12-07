@@ -25,6 +25,15 @@ Write stat_*.txt"""
         for k in sorted(result):
             fout.write('%s\t%d\n' % (k, result[k]))
 
+def readStat(spec):
+    fname = 'stat_'+spec+'.txt'
+    specCounts = []
+    with open(fname, 'r') as fin:
+        for line in fin:
+            a, b = line.rstrip().split('\t')
+            specCounts.append((a, b))
+    return specCounts
+    
 if __name__ =='__main__':
     # listSpecs('specs')
     listSpecs('tags')
