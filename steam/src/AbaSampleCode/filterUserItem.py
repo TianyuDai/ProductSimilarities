@@ -2,6 +2,8 @@
 # filter out users have 0 item
 
 # http://cseweb.ucsd.edu/~jmcauley/datasets.html#steam_data
+
+import os
 import pickle
 from parse import parse
 
@@ -9,12 +11,12 @@ ItemMapLocation = 'obj/steam_games_lite.pkl'
 
 def getItemNames():
     result = {}
-    datahandle = parse('../data/steam_games.json.gz')
+    datahandle = parse('../../data/steam_games.json.gz')
     toremovekeys = [u"url", u"release_date", u"reviews_url"]
-    with open('steam_games_lite.json', 'w') as fout:
+    with open('steam_games_lite.json', 'w', encoding='utf-8') as fout:
         for line in datahandle:
             try:
-                idkey = line[u"id"].encode("ascii")
+                idkey = line[u"id"] #.encode("utf-8"))
             except KeyError:
                 # lack id
                 continue
@@ -29,8 +31,16 @@ def getItemNames():
         pickle.dump(result, f, pickle.HIGHEST_PROTOCOL)
     return result
     
+def getItemObject():
+    if not os.path.isfile(ItemMapLocation):
+        result = getItemNames()
+    else:
+        with open(ItemMapLocation, 'rb') as f:
+            result = pickle.load(f)
+    return result
+    
 def filterUserItem(allitems):
-    datahandle = parse('../data/australian_users_items.json.gz')
+    datahandle = parse('../../data/australian_users_items.json.gz')
     count = 0
     countgame = 0
     with open('australian_users_items_lite.json', 'w') as fout:
@@ -38,6 +48,9 @@ def filterUserItem(allitems):
             thisuser = {"steam_id": line["steam_id"]}
             useritems = []
             for items in line["items"]:
+                #k = next(iter(allitems.keys()))
+                #print(k, allitems[k])
+                #exit()
                 if items["item_id"] in allitems:
                     useritems.append({"id": items["item_id"], "playtime_forever": items["playtime_forever"]})
             if len(useritems) == 0:
@@ -56,6 +69,6 @@ def readItemMap():
         
 if __name__ == '__main__':
     
-    allitems = getItemNames()
-    #allitems = readItemMap()
+    # allitems = getItemNames()
+    allitems = readItemMap()
     filterUserItem(allitems)

@@ -9,8 +9,9 @@ from sklearn.cluster import SpectralClustering
 from specSimilarity import evalProductSpecs
 from listspecs import readStat
 
-def clusteringSimilar(spec, ncluster=4):
-    fname = 'similarity_'+spec+'.txt'
+def clusteringSimilar(spec, ncluster=4, fname=None):
+    if fname is None:
+        fname = 'similarity_'+spec+'.txt'
     if not os.path.isfile(fname):
         evalProductSpecs(spec)
     mat = np.loadtxt(fname)
