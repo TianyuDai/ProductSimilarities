@@ -6,7 +6,7 @@ from parse import parse
 # http://cseweb.ucsd.edu/~jmcauley/datasets.html#steam_data
 
 def testSummary():
-    datahandle = parse('../data/australian_users_items.json.gz')
+    datahandle = parse('../../data/australian_users_items.json.gz')
     count = 0
     with open('summary.json', 'w') as fout:
         for line in datahandle:
