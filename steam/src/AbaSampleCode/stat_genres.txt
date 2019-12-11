@@ -1,0 +1,22 @@
+Accounting	7
+Action	11320
+Adventure	8242
+Animation &amp; Modeling	183
+Audio Production	93
+Casual	8282
+Design &amp; Illustration	460
+Early Access	1462
+Education	125
+Free to Play	2031
+Indie	15858
+Massively Multiplayer	1108
+Photo Editing	77
+RPG	5479
+Racing	1083
+Simulation	6699
+Software Training	105
+Sports	1257
+Strategy	6957
+Utilities	340
+Video Production	116
+Web Publishing	268
