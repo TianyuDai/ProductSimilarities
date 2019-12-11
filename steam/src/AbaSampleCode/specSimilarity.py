@@ -50,7 +50,7 @@ Write similarity_*.txt"""
     similarityMat = np.divide( np.dot(prodSpecVecs, prodSpecVecs.T), np.dot(specNorms.T, specNorms))
     np.savetxt('similarity_'+spec+'.txt', similarityMat, fmt='%.6f')
                     
-def querySpecSimilarity(spec, val1=None, val2=None):
+def querySpecSimilarity(spec, prefix='similarity_', val1=None, val2=None):
     """show example of spec similarities"""
     specDicts = {}
     specLists = []
@@ -61,7 +61,7 @@ def querySpecSimilarity(spec, val1=None, val2=None):
             specDicts[a] = idx
             specLists.append(a)
             idx += 1
-    smlMat = np.loadtxt('similarity_'+spec+'.txt')
+    smlMat = np.loadtxt(prefix+spec+'.txt')
     if val1 is None:
         val1 = input('specification value 1 (required): ')
         val2 = input('specification value 2 (optional): ')
@@ -73,18 +73,24 @@ def querySpecSimilarity(spec, val1=None, val2=None):
     else:
         # output five most similar and five least similar
         orders = raws.argsort()
-        mostsimilars = orders[-2:-7:-1] # skip self
         print('---'+val1+'---')
         print('Most similar:')
-        for m in mostsimilars:
+        count = 0
+        for m in orders[::-1]:
+            if m == specDicts[val1]: continue
             print(' %s\t%f' % (specLists[m], raws[m]))
-        leastsimilars = orders[:5]
+            count += 1
+            if count >= 10: break
         print('Least similar:')
-        for m in leastsimilars:
+        count = 0
+        for m in orders:
+            if m == specDicts[val1]: continue
             print(' %s\t%f' % (specLists[m], raws[m]))
+            count += 1
+            if count >= 10: break
         
 if __name__ == '__main__':
     # generates similarity_ file
     
     # evalProductSpecs('tags')
-    querySpecSimilarity('tags', 'Historical')
+    querySpecSimilarity('tags', prefix='purchaseSimilarity_', val1='Nonlinear')
