@@ -2,7 +2,7 @@
 
 # Calculate the similarity based on user purchase data
 # For two spec values q and q', the similarity is given by
-# s_qq' = < 4 |Q \ Q'| |Q' \ Q| / |Q \cup Q'| >_(|Q| \neq 0)
+# s_qq' = < 4 |Q| |Q' \ Q| / |Q \cup Q'| >_(|Q| \neq 0)
 # Thus removes the similarity caused by one product has two spec value at one time
 # Will combine the similarity based on product specs exclusively
 
@@ -63,7 +63,7 @@ class AllUsersProcessor(object):
                 if rp == rq: continue
                 if rq in allspecvals:
                     unionpq = valCountList[rp] + valCountList[rq] - valCountMat[rp, rq]
-                    siab = 4.0*(valCountList[rp] - valCountMat[rp, rq])*(valCountList[rq] - valCountMat[rp, rq])/(unionpq*unionpq)
+                    siab = 4.0*(valCountList[rp])*(valCountList[rq] - valCountMat[rp, rq])/(unionpq*unionpq)
                     self.specSimSumMat[rp, rq] += siab
                 self.specSimCountMat[rp, rq] += 1
         
@@ -72,7 +72,7 @@ class AllUsersProcessor(object):
         for line in self.datahandle:
             items = [it['id'] for it in line['items']]
             self.processUserItems(items)
-            if count > 1000: break # debug usage
+            # if count > 1000: break # debug usage
             if count%100 == 0:
                 print('%d\r'%(count), end='')
             count += 1
