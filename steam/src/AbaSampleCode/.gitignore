@@ -3,9 +3,12 @@
 obj/*.pkl
 # intermediate data files
 similarity_*.txt
+!similarity_tags.txt
 purchaseSimilarity_*.txt
-stat_*.txt
+!purchaseSimilarity_tags.txt
+#stat_*.txt
 # local working files
 summary.json
 Untitled.ipynb
 .ipynb_checkpoints/*
+SimilarityVisualize.ipynb

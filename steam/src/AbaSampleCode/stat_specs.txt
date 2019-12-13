@@ -1,0 +1,40 @@
+Captions available	1643
+Co-op	4280
+Commentary available	201
+Cross-Platform Multiplayer	2550
+Downloadable Content	12691
+Full controller support	7385
+Game demo	363
+Gamepad	387
+HTC Vive	1984
+In-App Purchases	933
+Includes Source SDK	60
+Includes level editor	1377
+Keyboard / Mouse	418
+Local Co-op	743
+Local Multi-Player	1237
+MMO	942
+Mods	11
+Mods (require HL1)	1
+Mods (require HL2)	10
+Multi-player	8198
+Oculus Rift	1213
+Online Co-op	998
+Online Multi-Player	2370
+Partial Controller Support	6538
+Room-Scale	1445
+Seated	1090
+Shared/Split Screen	3962
+Single-player	27576
+Standing	1462
+Stats	2321
+Steam Achievements	16365
+Steam Cloud	9959
+Steam Leaderboards	6081
+Steam Trading Cards	12198
+Steam Turn Notifications	91
+Steam Workshop	1866
+SteamVR Collectibles	30
+Tracked Motion Controllers	1816
+Valve Anti-Cheat enabled	462
+Windows Mixed Reality	161
