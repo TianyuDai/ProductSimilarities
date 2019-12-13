@@ -1,3 +1,7 @@
+import pickle
+import gzip
+import numpy as np
+
 data_folder = 'steam/data'
 raw_data_folder = '{}/raw_data'.format(data_folder)
 
@@ -25,3 +29,30 @@ game_total_playtime_label = 'Total play time'
 game_average_two_weeks_playtime_label = "{} per person".format(game_two_weeks_playtime_label)
 game_average_total_playtime_label = "{} per person".format(game_total_playtime_label)
 
+embedded_coordinates_laplacian_eigenmaps = "{}/embedded_coordinates_laplacian".format(data_folder)
+output_data_matrix_name = 'transformed_coordinates'
+parameter_data_file = '{}/parameter_data_dict.gz'.format(data_folder)
+final_game_le_similarity_output_df = "{}/output_game_similarity_data_frame_for_training.xlsx".format(data_folder)
+
+game_genre_stat = '{}/stat_genres.txt'.format(data_folder)
+game_spec_stat = '{}/stat_specs.txt'.format(data_folder)
+game_tag_stat = '{}/stat_tags.txt'.format(data_folder)
+game_id_feature_dict = '{}/game_id_feature_dict.gz'.format(data_folder)
+one_hot_feature_dict = '{}/one_hot_feature_dict.gz'.format(data_folder)
+final_game_feature_input_df = '{}/input_game_feature_data_frame_for_training.xlsx'.format(data_folder)
+final_training_data_game_id_list = '{}/game_id_list.gz'.format(data_folder)
+
+
+def gzip_save(obj, file_name):
+    with gzip.open(file_name, 'w') as f_out:
+        pickle.dump(obj, f_out)
+
+
+def gzip_load(file_name):
+    with gzip.open(file_name) as f_in:
+        return pickle.load(f_in)
+
+
+def np_load(file_name, obj_name):
+    obj_dict = np.load(file_name)
+    return obj_dict[obj_name]
