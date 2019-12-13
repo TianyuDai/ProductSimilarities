@@ -1,0 +1,31 @@
+2D	1
+Action	4
+Adventure	2
+Board Game	1
+Card Game	1
+Casual	5
+Character Customization	1
+Competitive	1
+Dark Fantasy	1
+Design & Illustration	1
+Difficult	1
+FPS	1
+Fantasy	1
+Female Protagonist	1
+Free to Play	5
+Indie	8
+Multiplayer	1
+PvP	1
+RPG	1
+Racing	1
+Replay Value	1
+Shooter	1
+Simulation	7
+Sniper	1
+Sports	5
+Strategy	2
+Tactical	1
+Third Person	1
+Third-Person Shooter	1
+Trading Card Game	1
+Turn-Based	1
