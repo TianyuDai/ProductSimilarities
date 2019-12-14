@@ -85,3 +85,14 @@ def scatter3d_plot(data_array, marker_size=None, color=None, x_lim=None, y_lim=N
         ax.set_ylim(y_lim)
     if z_lim:
         ax.set_zlim(z_lim)
+
+
+def line_plot(data_array_dict, y_lim=None, title=None):
+    fig, ax = plt.subplots(1, 1)
+    for label, data_array in data_array_dict.items():
+        ax.plot(data_array[0, :], data_array[1, :], label=label)
+    ax.legend()
+    if y_lim:
+        ax.set_ylim(y_lim)
+    if title:
+        ax.set_title(title)
