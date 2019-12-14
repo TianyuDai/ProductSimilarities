@@ -12,7 +12,7 @@ class SteamRecommendation:
 
     def productDataReader(self): 
         idk = 0
-        steam_data_handler = parse('../../data/steam_games_lite.example.json')
+        steam_data_handler = parse('../../data/steam_games_large.json')
         for line in steam_data_handler:
             product_name = line['app_name']
             self.product_list.append(product_name)
@@ -30,12 +30,13 @@ class SteamRecommendation:
                 spec_idk[spec_name] = idk
                 idk += 1
         similarity_graph = np.loadtxt('similarity_'+self.spec+'.txt')
-        steam_data_handler = parse('../../data/steam_games_lite.example.json')
+        steam_data_handler = parse('../../data/steam_games_large.json')
         product_graph = np.zeros((self.n_games, self.n_games))
         for line_1 in steam_data_handler: 
             product_1 = self.product_idk[line_1['app_name']]
             spec_values_1 = line_1[self.spec]
-            for line_2 in steam_data_handler: 
+            steam_data_handler_2 = parse('../../data/steam_games_large.json')
+            for line_2 in steam_data_handler_2: 
                 product_2 = self.product_idk[line_2['app_name']]
                 spec_values_2 = line_2[self.spec]
                 product_1v2_similarity = 0

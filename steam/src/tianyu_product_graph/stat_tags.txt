@@ -1,31 +1,339 @@
-2D	1
-Action	4
-Adventure	2
-Board Game	1
-Card Game	1
-Casual	5
-Character Customization	1
-Competitive	1
-Dark Fantasy	1
-Design & Illustration	1
-Difficult	1
-FPS	1
-Fantasy	1
-Female Protagonist	1
-Free to Play	5
-Indie	8
-Multiplayer	1
-PvP	1
-RPG	1
-Racing	1
-Replay Value	1
-Shooter	1
-Simulation	7
-Sniper	1
-Sports	5
-Strategy	2
-Tactical	1
-Third Person	1
-Third-Person Shooter	1
-Trading Card Game	1
-Turn-Based	1
+1980s	80
+1990's	145
+2.5D	95
+2D	1945
+2D Fighter	104
+360 Video	24
+3D Platformer	167
+3D Vision	71
+4 Player Local	278
+4X	117
+6DOF	36
+Abstract	108
+Action	13004
+Action RPG	337
+Action-Adventure	299
+Adventure	9830
+Agriculture	39
+Aliens	163
+Alternate History	64
+America	31
+Animation & Modeling	272
+Anime	1303
+Arcade	968
+Arena Shooter	102
+Artificial Intelligence	10
+Assassin	50
+Asynchronous Multiplayer	36
+Atmospheric	1934
+Audio Production	119
+Base Building	160
+Based On A Novel	44
+Basketball	18
+Batman	27
+Beat 'em up	190
+Benchmark	18
+Bikes	2
+Blood	64
+Board Game	210
+Bowling	7
+Building	350
+Bullet Hell	307
+Bullet Time	36
+CRPG	66
+Capitalism	21
+Card Game	233
+Cartoon	106
+Cartoony	118
+Casual	9739
+Character Action Game	43
+Character Customization	194
+Chess	32
+Choices Matter	199
+Choose Your Own Adventure	184
+Cinematic	51
+City Builder	177
+Class-Based	39
+Classic	794
+Clicker	92
+Co-op	1235
+Co-op Campaign	26
+Cold War	59
+Colorful	274
+Comedy	930
+Comic Book	74
+Competitive	254
+Conspiracy	27
+Controller	462
+Conversation	8
+Crafting	292
+Crime	152
+Crowdfunded	39
+Cult Classic	106
+Cute	558
+Cyberpunk	207
+Cycling	5
+Dark	322
+Dark Comedy	35
+Dark Fantasy	170
+Dark Humor	120
+Dating Sim	134
+Demons	72
+Design & Illustration	629
+Destruction	112
+Detective	158
+Difficult	1313
+Dinosaurs	72
+Diplomacy	20
+Documentary	106
+Dragons	76
+Drama	186
+Driving	173
+Dungeon Crawler	237
+Dynamic Narration	15
+Dystopian	99
+Early Access	1947
+Economy	156
+Education	376
+Episodic	262
+Experience	18
+Experimental	101
+Exploration	592
+FMV	58
+FPS	1009
+Faith	4
+Family Friendly	773
+Fantasy	1363
+Fast-Paced	366
+Feature Film	14
+Female Protagonist	1178
+Fighting	263
+First-Person	1086
+Fishing	26
+Flight	176
+Football	56
+Foreign	7
+Free to Play	2406
+Funny	1117
+Futuristic	182
+Gambling	17
+Game Development	144
+GameMaker	86
+Games Workshop	49
+Gaming	58
+God Game	53
+Golf	20
+Gore	643
+Gothic	43
+Grand Strategy	154
+Great Soundtrack	2235
+Grid-Based Movement	41
+Gun Customization	26
+Hack and Slash	292
+Hacking	65
+Hand-drawn	118
+Hardware	9
+Heist	46
+Hex Grid	83
+Hidden Object	520
+Historical	370
+Horror	1332
+Horses	20
+Hunting	46
+Illuminati	148
+Indie	17620
+Intentionally Awkward Controls	6
+Interactive Fiction	106
+Inventory Management	16
+Investigation	9
+Isometric	229
+JRPG	277
+Kickstarter	132
+LEGO	42
+Lara Croft	14
+Lemmings	14
+Level Editor	168
+Linear	63
+Local Co-Op	511
+Local Multiplayer	512
+Loot	98
+Lore-Rich	34
+Lovecraftian	107
+MMORPG	182
+MOBA	86
+Magic	167
+Management	328
+Mars	24
+Martial Arts	40
+Massively Multiplayer	1286
+Match 3	162
+Mature	159
+Mechs	97
+Medieval	223
+Memes	387
+Metroidvania	189
+Military	185
+Mini Golf	14
+Minimalist	243
+Mining	17
+Mod	76
+Moddable	245
+Modern	22
+Mouse only	73
+Movie	720
+Multiplayer	2383
+Multiple Endings	129
+Music	322
+Music-Based Procedural Generation	26
+Mystery	448
+Mystery Dungeon	14
+Mythology	43
+NSFW	7
+Narration	51
+Naval	80
+Ninja	78
+Noir	81
+Nonlinear	18
+Nudity	433
+Offroad	28
+On-Rails Shooter	31
+Online Co-Op	582
+Open World	1318
+Otome	90
+Parkour	142
+Parody	55
+Party-Based RPG	264
+Perma Death	145
+Philisophical	22
+Photo Editing	80
+Physics	457
+Pinball	34
+Pirates	98
+Pixel Graphics	1241
+Platformer	1449
+Point & Click	866
+Political	55
+Politics	53
+Pool	9
+Post-apocalyptic	233
+Procedural Generation	230
+Programming	46
+Psychedelic	58
+Psychological	77
+Psychological Horror	434
+Puzzle	2111
+Puzzle-Platformer	377
+PvE	54
+PvP	236
+Quick-Time Events	36
+RPG	5919
+RPGMaker	476
+RTS	455
+Racing	1229
+Real Time Tactics	62
+Real-Time	86
+Real-Time with Pause	100
+Realistic	350
+Relaxing	303
+Remake	117
+Replay Value	391
+Resource Management	114
+Retro	959
+Rhythm	107
+Robots	198
+Rogue-like	508
+Rogue-lite	261
+Romance	174
+Rome	40
+Runner	70
+Sailing	28
+Sandbox	970
+Satire	50
+Sci-fi	1388
+Science	69
+Score Attack	68
+Sexual Content	216
+Shoot 'Em Up	532
+Shooter	1234
+Short	387
+Side Scroller	351
+Silent Protagonist	36
+Simulation	7730
+Singleplayer	4345
+Sniper	22
+Soccer	45
+Software	285
+Software Training	129
+Sokoban	19
+Soundtrack	133
+Space	720
+Space Sim	101
+Spectacle fighter	27
+Spelling	7
+Split Screen	77
+Sports	1597
+Star Wars	31
+Stealth	347
+Steam Machine	10
+Steampunk	158
+Story Rich	1445
+Strategy	7566
+Strategy RPG	70
+Stylized	129
+Superhero	76
+Supernatural	55
+Surreal	168
+Survival	864
+Survival Horror	308
+Swordplay	54
+Tactical	504
+Tactical RPG	73
+Tanks	77
+Team-Based	136
+Text-Based	115
+Third Person	621
+Third-Person Shooter	234
+Thriller	120
+Time Attack	36
+Time Manipulation	31
+Time Travel	55
+Top-Down	280
+Top-Down Shooter	192
+Touch-Friendly	107
+Tower Defense	345
+TrackIR	134
+Trading	51
+Trading Card Game	76
+Trains	174
+Transhumanism	7
+Turn-Based	949
+Turn-Based Combat	193
+Turn-Based Strategy	444
+Turn-Based Tactics	184
+Tutorial	98
+Twin Stick Shooter	189
+Typing	30
+Underground	6
+Underwater	59
+Utilities	613
+VR	1796
+Vampire	54
+Video Production	159
+Villain Protagonist	47
+Violent	516
+Visual Novel	617
+Voice Control	5
+Voxel	78
+Walking Simulator	285
+War	302
+Wargame	93
+Warhammer 40K	39
+Web Publishing	281
+Werewolves	26
+Western	77
+Word Game	17
+World War I	43
+World War II	226
+Wrestling	8
+Zombies	514
+e-sports	57
