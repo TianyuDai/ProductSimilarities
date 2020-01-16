@@ -65,7 +65,7 @@ def box_plot(data_array, y_lim=None):
         ax.set_ylim(y_lim)
 
 
-def scatter2d_plot(data_array, marker_size=None, color=None, x_lim=None, y_lim=None):
+def scatter2d_plot(data_array, marker_size=None, color=None, x_lim=None, y_lim=None, title=None):
     fig, ax = plt.subplots(1, 1)
     # color_seq = color.reshape([-1, 1])
     ax.scatter(data_array[:, 0], data_array[:, 1], s=marker_size, facecolor=color, edgecolor=color)
@@ -73,9 +73,11 @@ def scatter2d_plot(data_array, marker_size=None, color=None, x_lim=None, y_lim=N
         ax.set_xlim(x_lim)
     if y_lim:
         ax.set_ylim(y_lim)
+    if title:
+        ax.set_title(title)
 
 
-def scatter3d_plot(data_array, marker_size=None, color=None, x_lim=None, y_lim=None, z_lim=None):
+def scatter3d_plot(data_array, marker_size=None, color=None, x_lim=None, y_lim=None, z_lim=None, title=None):
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     ax.scatter(data_array[:, 0], data_array[:, 1], data_array[:, 2], s=marker_size, facecolor=color, edgecolor=color)
@@ -85,6 +87,8 @@ def scatter3d_plot(data_array, marker_size=None, color=None, x_lim=None, y_lim=N
         ax.set_ylim(y_lim)
     if z_lim:
         ax.set_zlim(z_lim)
+    if title:
+        ax.set_title(title)
 
 
 def line_plot(data_array_dict, y_lim=None, title=None):

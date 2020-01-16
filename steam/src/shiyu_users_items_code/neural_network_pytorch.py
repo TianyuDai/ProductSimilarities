@@ -28,15 +28,17 @@ def parameter_generation():
     output_data_file = config.final_game_le_similarity_output_df
     test_size_ratio = 0.2
 
-    epochs = 20
+    epochs = 100
     batch_size = 30
     input_feature_num = 164
-    output_feature_num = 3
-    nn_hidden_state = [50, 10]
+    output_feature_num = 2
+    # nn_hidden_state = [50, 10]
+    nn_hidden_state = [80, 40, 10]
+    relu_negative_slope = 0.5
     device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
     optimization_method = torch.optim.Adam
     optimizer_parameter_dict = {
-        'lr': 1e-3,
+        'lr': 1e-4,
         'betas': (0.9, 0.999),
         'weight_decay': 0,
         'amsgrad': False
@@ -50,7 +52,7 @@ def data_preparation(
     input_data_df = pd.read_excel(input_data_file)
     output_data_df = pd.read_excel(output_data_file)
     if output_feature_num < 3:
-        output_data_df = output_data_df.iloc[:, :output_feature_num]
+        output_data_df = output_data_df.iloc[:, :output_feature_num + 1]
     input_data_array = input_data_df.to_numpy()[:, 1:]
     output_data_array = output_data_df.to_numpy()[:, 1:]
     input_train, input_test, output_train, output_test = sklearn.model_selection.train_test_split(
@@ -61,15 +63,16 @@ def data_preparation(
     test_dataset = TensorDataset(input_test, output_test)
     train_data_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     test_data_loader = DataLoader(test_dataset, batch_size=batch_size * 2)
-    return train_data_loader, test_data_loader
+    return train_data_loader, test_data_loader, input_data_array, output_data_array
 
 
-def model_generator(input_feature_num, nn_hidden_state, output_feature_num, device, **other_parameters):
+def model_generator(
+        input_feature_num, nn_hidden_state, output_feature_num, device, relu_negative_slope, **other_parameters):
     nn_state_num_list = [input_feature_num, *nn_hidden_state, output_feature_num]
     network_list = []
     for layer_index in range(1, len(nn_state_num_list)):
         network_list.append(nn.Linear(nn_state_num_list[layer_index - 1], nn_state_num_list[layer_index]))
-        network_list.append(nn.LeakyReLU())
+        network_list.append(nn.LeakyReLU(negative_slope=relu_negative_slope))
     model = nn.Sequential(*network_list)
     model.to(device)
     return model
@@ -114,15 +117,38 @@ def loss_score_plot(train_score_list, test_score_list, **other_parameters):
     plt.show()
 
 
+def model_prediction(model, input_data_array, output_data_array):
+    x_lim = [-0.035, 0.035]
+    y_lim = [-0.06, 0.105]
+    color_rgb = np.array([31, 119, 180]) / 255
+    alpha_value = 0.2
+    color_vector = np.concatenate([color_rgb, [alpha_value]])
+    model.eval()
+    with torch.no_grad():
+        prediction_array = np.array(model(torch.Tensor(input_data_array)))
+        if prediction_array.shape[1] == 2:
+            plotting.scatter2d_plot(
+                output_data_array, marker_size=3, color=color_vector, x_lim=x_lim, y_lim=y_lim, title='Real data')
+            plotting.scatter2d_plot(
+                prediction_array, marker_size=3, color=color_vector, x_lim=x_lim, y_lim=y_lim, title='Prediction')
+        else:
+            plotting.scatter3d_plot(
+                output_data_array, marker_size=3, color=color_vector, x_lim=x_lim, y_lim=y_lim, title='Real data')
+            plotting.scatter3d_plot(
+                prediction_array, marker_size=3, color=color_vector, x_lim=x_lim, y_lim=y_lim, title='Prediction')
+    plt.show()
+
+
 def main():
     parameter_dict = parameter_generation()
-    train_data_loader, test_data_loader = data_preparation(**parameter_dict)
+    train_data_loader, test_data_loader, input_data_array, output_data_array = data_preparation(**parameter_dict)
     model = model_generator(**parameter_dict)
     optimizer = optimizer_generator(model=model, **parameter_dict)
     train_loss_score_list, test_loss_score_list = training(
         model=model, optimizer=optimizer,
         train_data_loader=train_data_loader, test_data_loader=test_data_loader, **parameter_dict)
     loss_score_plot(train_loss_score_list, test_loss_score_list)
+    model_prediction(model, input_data_array, output_data_array)
 
 
 if __name__ == '__main__':
