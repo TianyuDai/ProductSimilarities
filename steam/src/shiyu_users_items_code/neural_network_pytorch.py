@@ -33,8 +33,8 @@ def parameter_generation():
     input_feature_num = 164
     output_feature_num = 2
     # nn_hidden_state = [50, 10]
-    nn_hidden_state = [80, 40, 10]
-    relu_negative_slope = 0.5
+    nn_hidden_state = [80, 25, 10]
+    relu_negative_slope = 0.3
     device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
     optimization_method = torch.optim.Adam
     optimizer_parameter_dict = {
@@ -72,7 +72,8 @@ def model_generator(
     network_list = []
     for layer_index in range(1, len(nn_state_num_list)):
         network_list.append(nn.Linear(nn_state_num_list[layer_index - 1], nn_state_num_list[layer_index]))
-        network_list.append(nn.LeakyReLU(negative_slope=relu_negative_slope))
+        if layer_index is not len(nn_state_num_list) - 1:
+            network_list.append(nn.LeakyReLU(negative_slope=relu_negative_slope))
     model = nn.Sequential(*network_list)
     model.to(device)
     return model
