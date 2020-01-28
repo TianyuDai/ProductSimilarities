@@ -94,7 +94,7 @@ class UsersItemsStat(object):
         if game_id_buyer_index_dict:
             self.game_id_buyers_index_dict = gzip_load(config.game_id_purchase_number_order_dict_file)
         if game_id_list_training_set:
-            self.game_id_list_training_set = gzip_load(config.final_training_data_game_id_list)
+            self.game_id_list_training_set = gzip_load(config.final_nn_data_game_id_list)
         if game_player_playtime_dict:
             self.game_player_playtime_dict = gzip_load(config.game_player_playtime_dict_file)
         if player_game_playtime_dict:

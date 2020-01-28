@@ -40,7 +40,10 @@ game_tag_stat = '{}/stat_tags.txt'.format(data_folder)
 game_id_feature_dict = '{}/game_id_feature_dict.gz'.format(data_folder)
 one_hot_feature_dict = '{}/one_hot_feature_dict.gz'.format(data_folder)
 final_game_feature_input_df = '{}/input_game_feature_data_frame_for_training.xlsx'.format(data_folder)
-final_training_data_game_id_list = '{}/game_id_list.gz'.format(data_folder)
+final_nn_data_game_id_list = '{}/game_id_list.gz'.format(data_folder)
+final_train_data_game_id_list = '{}/train_game_id_list.gz'.format(data_folder)
+final_test_data_game_id_list = '{}/test_game_id_list.gz'.format(data_folder)
+predicted_data_frame_file = '{}/predicted_game_similarity_data_frame.xlsx'.format(data_folder)
 
 
 def gzip_save(obj, file_name):

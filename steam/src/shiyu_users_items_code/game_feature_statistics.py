@@ -267,7 +267,7 @@ class GameItemStat(object):
             data_dict_list.append(current_feature_dict)
         final_data_frame = pd.DataFrame(data_dict_list, index=game_id_list)
         final_data_frame.to_excel(config.final_game_feature_input_df)
-        config.gzip_save(game_id_list, config.final_training_data_game_id_list)
+        config.gzip_save(game_id_list, config.final_nn_data_game_id_list)
 
 
 def main():
