@@ -48,7 +48,7 @@ class DataOrganizer:
                 # print(len(self.train_game_id)+1)
         for game_id in self.train_game_id_discard: 
             self.train_game_id.remove(game_id)
-        self.n_train = len(self.train_game_id)+1
+        self.n_train = len(self.train_game_id)
 
         for game_id in self.test_game_id: 
             # assert game_id in self.raw_game_id, "Train id "+game_id+" is not in the raw data! "
@@ -61,12 +61,12 @@ class DataOrganizer:
                 self.test_game_id_discard.append(game_id)
         for game_id in self.test_game_id_discard: 
             self.test_game_id.remove(game_id)
-        self.n_test = len(self.test_game_id)+1
+        self.n_test = len(self.test_game_id)
 
-        np.save('train_game_id', self.train_game_id)
-        np.save('test_game_id', self.test_game_id)
-        np.save('train_game_spec', self.train_game_spec)
-        np.save('test_game_spec', self.test_game_spec)
+        # np.save('train_game_id', self.train_game_id)
+        # np.save('test_game_id', self.test_game_id)
+        # np.save('train_game_spec', self.train_game_spec)
+        # np.save('test_game_spec', self.test_game_spec)
 
 if __name__ == '__main__': 
     data_organizer = DataOrganizer('tags') 
