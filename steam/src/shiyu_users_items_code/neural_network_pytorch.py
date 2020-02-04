@@ -68,10 +68,10 @@ def train_test_data_generation(
     input_test_df = input_data_df.loc[test_data_id_list]
     output_train_df = output_data_df.loc[train_data_id_list]
     output_test_df = output_data_df.loc[test_data_id_list]
-    input_train_array = input_train_df.to_numpy()[:, :]
-    input_test_array = input_test_df.to_numpy()[:, :]
-    output_train_array = output_train_df.to_numpy()[:, :]
-    output_test_array = output_test_df.to_numpy()[:, :]
+    input_train_array = input_train_df.to_numpy()
+    input_test_array = input_test_df.to_numpy()
+    output_train_array = output_train_df.to_numpy()
+    output_test_array = output_test_df.to_numpy()
     return input_train_array, input_test_array, output_train_array, output_test_array
 
 
@@ -86,8 +86,8 @@ def data_preparation(
     output_data_df = load_pandas(output_data_file)
     if output_feature_num < 3:
         output_data_df = output_data_df.iloc[:, :output_feature_num]
-    input_data_array = input_data_df.to_numpy()[:, :]
-    output_data_array = output_data_df.to_numpy()[:, :]
+    input_data_array = input_data_df.to_numpy()
+    output_data_array = output_data_df.to_numpy()
     train_data_id_list = config.gzip_load(config.final_train_data_game_id_list)
     test_data_id_list = config.gzip_load(config.final_test_data_game_id_list)
     input_train_array, input_test_array, output_train_array, output_test_array = train_test_data_generation(
