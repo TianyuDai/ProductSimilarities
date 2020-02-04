@@ -5,3 +5,5 @@ stat_tags.txt
 *.png
 *.npy
 *.txt
+*.pkl
+__pycache__
