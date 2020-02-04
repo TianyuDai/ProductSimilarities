@@ -4,6 +4,7 @@ import openpyxl
 import numpy as np
 import matplotlib.pyplot as plt
 import sklearn.manifold as manifold_learning
+from sklearn.cluster import SpectralClustering
 import pandas as pd
 
 import steam.src.shiyu_users_items_code.config as config
@@ -23,6 +24,7 @@ class UsersItemsStat(object):
         self.items_playtime_forever_counter = collections.Counter()
         self.game_name_dict = {}
         self.game_num_to_stat = None
+        self.complete_game_id_list = []
         self.id_item_dict = {}
         self.ignored_games_dict = None
         self.example_game_id_playtime_dict = {}
@@ -33,6 +35,7 @@ class UsersItemsStat(object):
         self.basic_playtime = 0
         self.game_similarity_matrix = None
         self.embedding_dim = -1
+        self.cluster_num = -1
         self.max_item_num = -1
         self.transformed_coordinates = None
         self.game_id_list_training_set = None
@@ -40,9 +43,10 @@ class UsersItemsStat(object):
     def hook_prepare(self):
         # self.input_file_path = config.test_users_items_file
         self.input_file_path = config.users_items_file
-        id_item_dict = True
-        game_id_buyer_index_dict = True
-        game_id_list_training_set = True
+        complete_game_id_list = True
+        id_item_dict = False
+        game_id_buyer_index_dict = False
+        game_id_list_training_set = False
         game_player_playtime_dict = False
         player_game_playtime_dict = False
         player_weight_dict = False
@@ -56,11 +60,13 @@ class UsersItemsStat(object):
 
         self.embedding_dim = 3
         self.max_item_num = 8500
+        self.cluster_num = 8
 
         # self.ignored_games_dict = self.ignored_games_loader()
         self.pickle_obj_loader(
-            id_item_dict, game_id_buyer_index_dict, game_id_list_training_set, game_player_playtime_dict,
-            player_game_playtime_dict, player_weight_dict, game_similarity_matrix, transformed_coordinates)
+            complete_game_id_list, id_item_dict, game_id_buyer_index_dict, game_id_list_training_set,
+            game_player_playtime_dict, player_game_playtime_dict, player_weight_dict, game_similarity_matrix,
+            transformed_coordinates)
 
     def hook_each_line(self, input_dict):
         self.stat_purchase_and_playtime_each_line(input_dict)
@@ -80,15 +86,18 @@ class UsersItemsStat(object):
         # self.game_index_stat()
         # self.purchase_similarity_computation()
         # self.similarity_plot()
-        self.similarity_embedding()
+        # self.similarity_embedding()
         # self.embedding_plot()
-        self.le_similarity_for_training_output()
+        # self.le_similarity_for_training_output()
+        self.spectral_clustering()
 
     def pickle_obj_loader(
-            self, id_item_dict=False, game_id_buyer_index_dict=False, game_id_list_training_set=False,
-            game_player_playtime_dict=False, player_game_playtime_dict=False, player_weight_dict=False,
-            game_similarity_matrix=False, transformed_coordinates=False):
+            self, complete_game_id_list=False, id_item_dict=False, game_id_buyer_index_dict=False,
+            game_id_list_training_set=False, game_player_playtime_dict=False, player_game_playtime_dict=False,
+            player_weight_dict=False, game_similarity_matrix=False, transformed_coordinates=False):
 
+        if complete_game_id_list:
+            self.complete_game_id_list = gzip_load(config.complete_game_id_list_file)
         if id_item_dict:
             self.id_item_dict = gzip_load(config.game_id_name_dict_file)
         if game_id_buyer_index_dict:
@@ -372,6 +381,29 @@ class UsersItemsStat(object):
         le_coordinates_dataframe = pd.DataFrame(le_coordinates_for_training, index=game_id_list)
         le_coordinates_dataframe.to_excel(config.final_game_le_similarity_output_df)
 
+    def spectral_clustering(self):
+        game_similarity_matrix = self.game_similarity_matrix
+        complete_game_id_list = self.complete_game_id_list
+        data_size = game_similarity_matrix.shape[0]
+        spectral_clustering = SpectralClustering(
+            n_clusters=self.cluster_num, affinity='precomputed', n_jobs=7)
+        clustering_labels_array = spectral_clustering.fit_predict(game_similarity_matrix)
+        counter = collections.Counter(clustering_labels_array)
+        print(counter)
+        np.savez_compressed(
+            "{}".format(config.complete_cluster_labels_array),
+            clustering_labels_array=clustering_labels_array)
+        order_pair_list = [
+            (index, index + label * 10 * data_size)
+            for index, label in enumerate(clustering_labels_array)]
+        new_order_array = list(zip(*sorted(order_pair_list, key=lambda x: x[1])))[0]
+        clustered_similarity_matrix = shuffle_symmetric_matrix(game_similarity_matrix, new_order_array)
+        plotting.heatmap_plot(clustered_similarity_matrix, max_value=0.0008)
+        plt.show()
+
+    # def cluster_feature_stat(self):
+
+
 
 def example_data_generator():
     def generator_for_one_file(raw_file_name, example_file_name, count):
@@ -414,6 +446,14 @@ def symmetrize_matrix(matrix, upper_or_lower='upper'):
     else:
         raise ValueError('Parameter error! Only for "upper" or "lower"')
     return new_matrix
+
+
+def shuffle_symmetric_matrix(input_matrix, target_order_list):
+    if len(target_order_list) != input_matrix.shape[0] != input_matrix.shape[1]:
+        raise ValueError('Length of target_order_list is not equal to dimension of input_matrix!')
+    row_shuffled_matrix = input_matrix[target_order_list, :]
+    col_shuffled_matrix = row_shuffled_matrix[:, target_order_list]
+    return col_shuffled_matrix
 
 
 def main():

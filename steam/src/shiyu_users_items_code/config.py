@@ -14,12 +14,14 @@ game_stat_file = '{}/game_stat_files.xlsx'.format(data_folder)
 ignored_games_list_file = '{}/ignored_and_merged_games.xlsx'.format(data_folder)
 ignored_class_beta_version = 'beta_version'
 ignored_class_low_playtime = 'low_playtime'
+complete_game_id_list_file = "{}/complete_game_id_list.gz".format(data_folder)
 game_id_name_dict_file = '{}/game_id_name_dict.gz'.format(data_folder)
 game_id_purchase_number_order_dict_file = '{}/game_id_purchase_number_order.gz'.format(data_folder)
 game_player_playtime_dict_file = '{}/game_player_playtime_dict.gz'.format(data_folder)
 player_game_playtime_dict_file = '{}/player_game_playtime_dict.gz'.format(data_folder)
 player_weight_dict_file = '{}/player_weight_dict.gz'.format(data_folder)
 game_weighted_similarity_matrix = '{}/game_weighted_similarity_matrix.npz'.format(data_folder)
+complete_cluster_labels_array = '{}/complete_cluster_labels.npz'.format(data_folder)
 
 game_id_label = 'ID'
 game_name_label = 'Name'
