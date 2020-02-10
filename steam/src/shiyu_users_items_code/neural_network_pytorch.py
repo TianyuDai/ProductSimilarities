@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import torch, torch.nn as nn, torch.optim, torch.nn.functional as F
 from torch.utils.data import TensorDataset, DataLoader
 import sklearn.model_selection
+from scipy.spatial import distance_matrix
 
 import steam.src.shiyu_users_items_code.config as config
 import steam.src.shiyu_users_items_code.plotting as plotting
@@ -23,27 +24,80 @@ class WrappedDataLoader:
             yield (self.func(*b))
 
 
-def parameter_generation():
+def coplay_parameter_generation():
+    train_data_id_list = config.gzip_load(config.final_train_data_game_id_list)
+    test_data_id_list = config.gzip_load(config.final_test_data_game_id_list)
     input_data_file = config.final_game_feature_input_df
     output_data_file = config.final_game_le_similarity_output_df
-    test_size_ratio = 0.2
 
+    # input_data_file = config.train_game_feature_input_df
+    # output_data_file = config.train_le_similarity_output_df
+    # predict_input_data_file = config.test_game_feature_input_df
+    # test_size_ratio = 0.1
+
+    # epochs = 60
     epochs = 100
     batch_size = 30
+    # batch_size = 20
     input_feature_num = 164
-    output_feature_num = 2
+    output_feature_index_list = [0, 1]
     # nn_hidden_state = [50, 10]
     nn_hidden_state = [80, 25, 10]
+    # nn_hidden_state = [50, 16, 6]
     relu_negative_slope = 0.3
+    # relu_negative_slope = 0.01
     device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
     optimization_method = torch.optim.Adam
     optimizer_parameter_dict = {
         'lr': 1e-4,
+        # 'lr': 3e-5,
         'betas': (0.9, 0.999),
         'weight_decay': 0,
         'amsgrad': False
     }
     loss_func = F.mse_loss
+    x_lim = [-0.035, 0.035]
+    y_lim = [-0.06, 0.105]
+    # x_lim = [-0.06, 0.06]
+    # y_lim = [-0.1, 0.11]
+    return locals()
+
+
+def copurchase_parameter_generation():
+    train_data_id_list = config.gzip_load(config.final_train_data_game_id_list)
+    test_data_id_list = config.gzip_load(config.final_test_data_game_id_list)
+    input_data_file = config.final_game_feature_input_df
+    output_data_file = config.final_copurchase_similarity_output_df
+
+    # input_data_file = config.train_game_feature_input_df
+    # output_data_file = config.train_le_similarity_output_df
+    # predict_input_data_file = config.test_game_feature_input_df
+    # test_size_ratio = 0.1
+
+    # epochs = 60
+    epochs = 130
+    batch_size = 30
+    # batch_size = 20
+    input_feature_num = 164
+    output_feature_index_list = [1, 2]
+    output_feature_num = len(output_feature_index_list)
+    # nn_hidden_state = [50, 10]
+    nn_hidden_state = [80, 25, 10]
+    # nn_hidden_state = [50, 16, 6]
+    relu_negative_slope = 0.05
+    # relu_negative_slope = 0.01
+    device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    optimization_method = torch.optim.Adam
+    optimizer_parameter_dict = {
+        'lr': 2e-4,
+        # 'lr': 3e-5,
+        'betas': (0.9, 0.999),
+        'weight_decay': 0,
+        'amsgrad': False
+    }
+    loss_func = F.mse_loss
+    x_lim = [-0.001, 0.004]
+    y_lim = [-0.004, 0.006]
     return locals()
 
 
@@ -72,26 +126,32 @@ def train_test_data_generation(
     input_test_array = input_test_df.to_numpy()
     output_train_array = output_train_df.to_numpy()
     output_test_array = output_test_df.to_numpy()
-    return input_train_array, input_test_array, output_train_array, output_test_array
+    predict_input_data_df = input_test_df
+    return input_train_array, input_test_array, output_train_array, output_test_array, predict_input_data_df
 
 
 def data_preparation(
-        input_data_file, output_data_file, batch_size, output_feature_num, **other_parameters):
-    def load_pandas(file_name):
-        target_df = pd.read_excel(file_name, dtype={'id': str})
-        target_df.set_index('id', inplace=True)
-        return target_df
-
-    input_data_df = load_pandas(input_data_file)
-    output_data_df = load_pandas(output_data_file)
-    if output_feature_num < 3:
-        output_data_df = output_data_df.iloc[:, :output_feature_num]
+        input_data_file, output_data_file, batch_size, output_feature_index_list, predict_input_data_file=None,
+        test_size_ratio=None, train_data_id_list=None, test_data_id_list=None, **other_parameters):
+    input_data_df = config.load_pandas(input_data_file)
+    output_data_df = config.load_pandas(output_data_file)
+    output_data_df = output_data_df.iloc[:, output_feature_index_list]
     input_data_array = input_data_df.to_numpy()
     output_data_array = output_data_df.to_numpy()
-    train_data_id_list = config.gzip_load(config.final_train_data_game_id_list)
-    test_data_id_list = config.gzip_load(config.final_test_data_game_id_list)
-    input_train_array, input_test_array, output_train_array, output_test_array = train_test_data_generation(
-        input_data_df, output_data_df, train_data_id_list, test_data_id_list)
+    if predict_input_data_file:
+        predict_input_data_df = config.load_pandas(predict_input_data_file)
+    else:
+        predict_input_data_df = None
+    if test_size_ratio is not None:
+        (
+            input_train_array, input_test_array, output_train_array,
+            output_test_array) = sklearn.model_selection.train_test_split(
+            input_data_array, output_data_array, test_size=test_size_ratio)
+    else:
+        (
+            input_train_array, input_test_array, output_train_array,
+            output_test_array, predict_input_data_df) = train_test_data_generation(
+            input_data_df, output_data_df, train_data_id_list, test_data_id_list)
     input_train, input_test, output_train, output_test = map(
         torch.Tensor, (input_train_array, input_test_array, output_train_array, output_test_array))
     train_dataset = TensorDataset(input_train, output_train)
@@ -99,7 +159,7 @@ def data_preparation(
     train_data_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     test_data_loader = DataLoader(test_dataset, batch_size=batch_size * 2)
     return train_data_loader, test_data_loader, input_data_array, output_data_array, \
-           input_test_array, test_data_id_list
+           output_train_array, output_test_array, predict_input_data_df
 
 
 def model_generator(
@@ -151,12 +211,10 @@ def loss_score_plot(train_score_list, test_score_list, **other_parameters):
     test_data_array = np.array(test_score_list).transpose()
     data_array_dict = {'Training loss': train_data_array, 'Testing loss': test_data_array}
     plotting.line_plot(data_array_dict, title='Loss value during training')
-    plt.show()
 
 
-def model_prediction(model, input_data_array, output_data_array):
-    x_lim = [-0.035, 0.035]
-    y_lim = [-0.06, 0.105]
+def training_set_prediction_comparison(
+        model, input_data_array, output_data_array, x_lim=None, y_lim=None, **other_parameters):
     color_rgb = np.array([31, 119, 180]) / 255
     alpha_value = 0.2
     color_vector = np.concatenate([color_rgb, [alpha_value]])
@@ -176,20 +234,38 @@ def model_prediction(model, input_data_array, output_data_array):
     return prediction_array
 
 
-def save_test_predictions(model, input_test_array, test_data_id_list, save_path):
+def predictions(model, predict_input_data_df, save_path):
+    predict_input_data_array = predict_input_data_df.to_numpy()
     model.eval()
     with torch.no_grad():
-        prediction_array = np.array(model(torch.Tensor(input_test_array)))
-    prediction_df = pd.DataFrame(prediction_array, index=test_data_id_list)
+        prediction_array = np.array(model(torch.Tensor(predict_input_data_array)))
+    prediction_df = pd.DataFrame(prediction_array, index=predict_input_data_df.index)
     prediction_df.to_excel(save_path)
 
 
+def predict_coordinates_to_similarity(
+        file_path, output_train_array, output_test_array, output_prediction_file):
+    prediction_df = config.load_pandas(file_path)
+    prediction_test_output_array = prediction_df.to_numpy()
+    prediction_train_test_similarity_matrix = distance_matrix(output_train_array, prediction_test_output_array)
+    prediction_test_similarity_matrix = distance_matrix(output_test_array, prediction_test_output_array)
+    np.savez_compressed(
+        output_prediction_file,
+        prediction_train_test_similarity_matrix=prediction_train_test_similarity_matrix,
+        prediction_test_similarity_matrix=prediction_test_similarity_matrix)
+
+
 def main():
-    parameter_dict = parameter_generation()
+    # parameter_dict = coplay_parameter_generation()
+    # prediction_save_path = config.predicted_data_frame_file
+    # output_prediction_file = config.predicted_train_test_coplay_matrix_file
+    parameter_dict = copurchase_parameter_generation()
+    prediction_save_path = config.predicted_copurchase_data_frame_file
+    output_prediction_file = config.predicted_train_test_copurchase_matrix_file
     # random_train_test_split(**parameter_dict)
     (
         train_data_loader, test_data_loader, input_data_array, output_data_array,
-        input_test_array, test_data_id_list) = data_preparation(
+        output_train_array, output_test_array, predict_input_data_df) = data_preparation(
         **parameter_dict)
     model = model_generator(**parameter_dict)
     optimizer = optimizer_generator(model=model, **parameter_dict)
@@ -197,8 +273,11 @@ def main():
         model=model, optimizer=optimizer,
         train_data_loader=train_data_loader, test_data_loader=test_data_loader, **parameter_dict)
     loss_score_plot(train_loss_score_list, test_loss_score_list)
-    prediction_array = model_prediction(model, input_data_array, output_data_array)
-    save_test_predictions(model, input_test_array, test_data_id_list, config.predicted_data_frame_file)
+    prediction_array = training_set_prediction_comparison(
+        model, input_data_array, output_data_array, **parameter_dict)
+    predictions(model, predict_input_data_df, prediction_save_path)
+    predict_coordinates_to_similarity(
+        prediction_save_path, output_train_array, output_test_array, output_prediction_file)
     plt.show()
 
 
