@@ -1,6 +1,7 @@
 import pickle
 import gzip
 import numpy as np
+import pandas as pd
 
 data_folder = 'steam/data'
 raw_data_folder = '{}/raw_data'.format(data_folder)
@@ -20,7 +21,14 @@ game_id_purchase_number_order_dict_file = '{}/game_id_purchase_number_order.gz'.
 game_player_playtime_dict_file = '{}/game_player_playtime_dict.gz'.format(data_folder)
 player_game_playtime_dict_file = '{}/player_game_playtime_dict.gz'.format(data_folder)
 player_weight_dict_file = '{}/player_weight_dict.gz'.format(data_folder)
-game_weighted_similarity_matrix = '{}/game_weighted_similarity_matrix.npz'.format(data_folder)
+copurchase_similarity_matrix_file = '{}/copurchase_similarity_matrix.npz'.format(data_folder)
+game_weighted_similarity_matrix_file = '{}/game_weighted_similarity_matrix.npz'.format(data_folder)
+# train_similarity_matrix_file = '{}/train_similarity_matrix.npz'.format(data_folder)
+train_test_similarity_matrix_file = '{}/train_test_similarity_matrix.npz'.format(data_folder)
+train_test_copurchase_similarity_matrix_file = '{}/train_test_copurchase_similarity_matrix.npz'.format(data_folder)
+predicted_train_test_coplay_matrix_file = '{}/predicted_train_test_coplay_similarity_matrix.npz'.format(data_folder)
+predicted_train_test_copurchase_matrix_file = '{}/predicted_train_test_copurchase_similarity_matrix.npz'.format(data_folder)
+# test_similarity_matrix_file = '{}/test_similarity_matrix.npz'.format(data_folder)
 complete_cluster_labels_array = '{}/complete_cluster_labels.npz'.format(data_folder)
 
 game_id_label = 'ID'
@@ -32,9 +40,15 @@ game_average_two_weeks_playtime_label = "{} per person".format(game_two_weeks_pl
 game_average_total_playtime_label = "{} per person".format(game_total_playtime_label)
 
 embedded_coordinates_laplacian_eigenmaps = "{}/embedded_coordinates_laplacian".format(data_folder)
+embedded_train_coordinates = "{}/embedded_train_coordinates".format(data_folder)
+embedded_copurchase_coordinates = "{}/embedded_copurchase_coordinates".format(data_folder)
 output_data_matrix_name = 'transformed_coordinates'
 parameter_data_file = '{}/parameter_data_dict.gz'.format(data_folder)
 final_game_le_similarity_output_df = "{}/output_game_similarity_data_frame_for_training.xlsx".format(data_folder)
+final_copurchase_similarity_output_df = "{}/output_copurchase_similarity_data_frame_for_training.xlsx".format(data_folder)
+train_le_similarity_output_df = "{}/output_train_game_similarity_data_frame.xlsx".format(data_folder)
+train_game_feature_input_df = '{}/input_train_game_feature_data_frame.xlsx'.format(data_folder)
+test_game_feature_input_df = '{}/input_test_game_feature_data_frame.xlsx'.format(data_folder)
 
 game_genre_stat = '{}/stat_genres.txt'.format(data_folder)
 game_spec_stat = '{}/stat_specs.txt'.format(data_folder)
@@ -45,7 +59,8 @@ final_game_feature_input_df = '{}/input_game_feature_data_frame_for_training.xls
 final_nn_data_game_id_list = '{}/game_id_list.gz'.format(data_folder)
 final_train_data_game_id_list = '{}/train_game_id_list.gz'.format(data_folder)
 final_test_data_game_id_list = '{}/test_game_id_list.gz'.format(data_folder)
-predicted_data_frame_file = '{}/predicted_game_similarity_data_frame.xlsx'.format(data_folder)
+predicted_coplay_data_frame_file = '{}/predicted_game_similarity_data_frame.xlsx'.format(data_folder)
+predicted_copurchase_data_frame_file = '{}/predicted_copurchase_similarity_data_frame.xlsx'.format(data_folder)
 
 
 def gzip_save(obj, file_name):
@@ -60,4 +75,14 @@ def gzip_load(file_name):
 
 def np_load(file_name, obj_name):
     obj_dict = np.load(file_name)
-    return obj_dict[obj_name]
+    if isinstance(obj_name, str):
+        return obj_dict[obj_name]
+    else:
+        return [obj_dict[obj] for obj in obj_name]
+
+
+def load_pandas(file_name):
+    target_df = pd.read_excel(file_name, dtype={'id': str})
+    target_df.set_index('id', inplace=True)
+    return target_df
+

@@ -35,4 +35,4 @@ def clusteringSimilar(spec, ncluster=4, fname=None):
 
 
 if __name__ == '__main__':
-    clusteringSimilar('tags', 2)
+    clusteringSimilar('tags', 10)

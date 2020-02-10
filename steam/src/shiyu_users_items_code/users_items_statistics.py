@@ -34,24 +34,34 @@ class UsersItemsStat(object):
         self.player_weight_dict = None
         self.basic_playtime = 0
         self.game_similarity_matrix = None
+        self.train_similarity_matrix = None
+        self.train_test_similarity_matrix = None
+        self.copurchase_similarity_matrix = None
+        self.test_similarity_matrix = None
         self.embedding_dim = -1
         self.cluster_num = -1
         self.max_item_num = -1
         self.transformed_coordinates = None
+        self.transformed_coordinates_train = None
         self.game_id_list_training_set = None
+        self.train_game_id_list = None
 
     def hook_prepare(self):
         # self.input_file_path = config.test_users_items_file
         self.input_file_path = config.users_items_file
-        complete_game_id_list = True
+        complete_game_id_list = False
         id_item_dict = False
-        game_id_buyer_index_dict = False
-        game_id_list_training_set = False
+        game_id_buyer_index_dict = True
+        game_id_list_training_set = True
         game_player_playtime_dict = False
         player_game_playtime_dict = False
         player_weight_dict = False
-        game_similarity_matrix = True
+        game_similarity_matrix = False
+        train_test_similarity_matrix = False
+        copurchase_similarity_matrix = True
         transformed_coordinates = False
+        transformed_coordinates_train = False
+        train_game_id_list = False
 
         self.execute_loop = False
         self.game_num_to_stat = 500
@@ -65,8 +75,9 @@ class UsersItemsStat(object):
         # self.ignored_games_dict = self.ignored_games_loader()
         self.pickle_obj_loader(
             complete_game_id_list, id_item_dict, game_id_buyer_index_dict, game_id_list_training_set,
-            game_player_playtime_dict, player_game_playtime_dict, player_weight_dict, game_similarity_matrix,
-            transformed_coordinates)
+            game_player_playtime_dict, player_game_playtime_dict, player_weight_dict,
+            game_similarity_matrix, train_test_similarity_matrix, copurchase_similarity_matrix,
+            transformed_coordinates, transformed_coordinates_train, train_game_id_list)
 
     def hook_each_line(self, input_dict):
         self.stat_purchase_and_playtime_each_line(input_dict)
@@ -84,17 +95,21 @@ class UsersItemsStat(object):
         # self.total_playtime_each_person_plot()
         # self.player_weight_dict_saver()
         # self.game_index_stat()
+        # self.playtime_similarity_computation()
         # self.purchase_similarity_computation()
         # self.similarity_plot()
         # self.similarity_embedding()
-        # self.embedding_plot()
+        self.purchase_similarity_embedding()
+        # self.training_similarity_embedding()
         # self.le_similarity_for_training_output()
-        self.spectral_clustering()
+        # self.spectral_clustering()
 
     def pickle_obj_loader(
             self, complete_game_id_list=False, id_item_dict=False, game_id_buyer_index_dict=False,
             game_id_list_training_set=False, game_player_playtime_dict=False, player_game_playtime_dict=False,
-            player_weight_dict=False, game_similarity_matrix=False, transformed_coordinates=False):
+            player_weight_dict=False, game_similarity_matrix=False, train_test_similarity_matrix=False,
+            copurchase_similarity_matrix=False,
+            transformed_coordinates=False, transformed_coordinates_train=False, train_game_id_list=False):
 
         if complete_game_id_list:
             self.complete_game_id_list = gzip_load(config.complete_game_id_list_file)
@@ -112,11 +127,28 @@ class UsersItemsStat(object):
             self.player_weight_dict = gzip_load(config.player_weight_dict_file)
         if game_similarity_matrix:
             self.game_similarity_matrix = config.np_load(
-                config.game_weighted_similarity_matrix, 'game_similarity_matrix')
+                config.game_weighted_similarity_matrix_file, 'game_similarity_matrix')
+        if train_test_similarity_matrix:
+            (
+                self.train_similarity_matrix, self.train_test_similarity_matrix,
+                self.test_similarity_matrix) = config.np_load(
+                config.train_test_similarity_matrix_file,
+                ['train_similarity_matrix', 'train_test_similarity_matrix', 'test_similarity_matrix'])
+        if copurchase_similarity_matrix:
+            self.copurchase_similarity_matrix = config.np_load(
+                config.copurchase_similarity_matrix_file, 'copurchase_similarity_matrix')
         if transformed_coordinates:
             self.transformed_coordinates = config.np_load(
-                "{}_{}d.npz".format(config.embedded_coordinates_laplacian_eigenmaps, self.embedding_dim),
+                "{}_{}d.npz".format(
+                    config.embedded_coordinates_laplacian_eigenmaps, self.embedding_dim),
                 config.output_data_matrix_name)
+        if transformed_coordinates_train:
+            self.transformed_coordinates_train = config.np_load(
+                "{}_{}d.npz".format(
+                    config.embedded_train_coordinates, self.embedding_dim),
+                config.output_data_matrix_name)
+        if train_game_id_list:
+            self.train_game_id_list = gzip_load(config.final_train_data_game_id_list)
 
     def stat_purchase_and_playtime_each_line(self, input_dict):
         for item in input_dict['items']:
@@ -261,34 +293,6 @@ class UsersItemsStat(object):
         # plotting.heatmap_plot(data_array, 'Game similarity', max_value=0.0008)
         plt.show()
 
-    def embedding_plot(self):
-        transformed_coordinates = self.transformed_coordinates
-        dim = self.embedding_dim
-        color_rgb = np.array([31, 119, 180]) / 255
-        alpha_value = 0.2
-        x_lim = [-0.035, 0.035]
-        y_lim = [-0.06, 0.105]
-        color_vector = np.concatenate([color_rgb, [alpha_value]])
-        if dim == 2:
-            plotting.scatter2d_plot(
-                transformed_coordinates, marker_size=3, color=color_vector, x_lim=x_lim, y_lim=y_lim)
-        elif dim == 3:
-            plotting.scatter3d_plot(
-                transformed_coordinates, marker_size=3, color=color_vector, x_lim=x_lim, y_lim=y_lim)
-        if x_lim[0] is not None:
-            outlier_loc = transformed_coordinates[:, 0] < x_lim[0]
-            print(np.count_nonzero(outlier_loc) / transformed_coordinates.shape[0])
-        if x_lim[1] is not None:
-            outlier_loc = transformed_coordinates[:, 0] > x_lim[1]
-            print(np.count_nonzero(outlier_loc) / transformed_coordinates.shape[0])
-        if y_lim[0] is not None:
-            outlier_loc = transformed_coordinates[:, 1] < y_lim[0]
-            print(np.count_nonzero(outlier_loc) / transformed_coordinates.shape[0])
-        if y_lim[1] is not None:
-            outlier_loc = transformed_coordinates[:, 1] > y_lim[1]
-            print(np.count_nonzero(outlier_loc) / transformed_coordinates.shape[0])
-        plt.show()
-
     def parameter_saver(self):
         gzip_save(self.id_item_dict, config.game_id_name_dict_file)
         gzip_save(self.game_player_playtime_dict, config.game_player_playtime_dict_file)
@@ -315,7 +319,7 @@ class UsersItemsStat(object):
 
         gzip_save(player_weight_dict, config.player_weight_dict_file)
 
-    def purchase_similarity_computation(self):
+    def playtime_similarity_computation(self):
         # game_id_name_dict = self.id_item_dict
         # game_id_index_dict = {game_id: index for index, game_id in enumerate(game_id_name_dict.keys())}
         game_id_buyers_index_dict = self.game_id_buyers_index_dict
@@ -329,14 +333,14 @@ class UsersItemsStat(object):
         count = 0
         for player_id, game_playtime_dict in player_game_playtime_dict.items():
             player_weight = player_weight_dict[player_id]
-            game_num = len(game_playtime_dict)
+            current_game_num = len(game_playtime_dict)
             game_id_list = list(game_playtime_dict.keys())
             game_index_list = [game_id_buyers_index_dict[game_id] for game_id in game_id_list]
             playtime_array = np.array(list(game_playtime_dict.values())) + self.basic_playtime
             total_playtime = playtime_array.sum()
             playtime_ratio_array = playtime_array / total_playtime
-            for index_i in range(game_num):
-                for index_j in range(index_i + 1, game_num):
+            for index_i in range(current_game_num):
+                for index_j in range(index_i + 1, current_game_num):
                     playtime_ratio_i = playtime_ratio_array[index_i]
                     playtime_ratio_j = playtime_ratio_array[index_j]
                     game_index_i = game_index_list[index_i]
@@ -352,22 +356,75 @@ class UsersItemsStat(object):
             if count % 1000 == 0:
                 print("{:.3f} finished...".format(count / player_num))
         game_similarity_matrix = raw_similarity_matrix / weight_matrix
-        np.savez_compressed(config.game_weighted_similarity_matrix, game_similarity_matrix=game_similarity_matrix)
+        np.savez_compressed(config.game_weighted_similarity_matrix_file, game_similarity_matrix=game_similarity_matrix)
         self.game_similarity_matrix = game_similarity_matrix
 
-    def similarity_embedding(self):
-        dim = self.embedding_dim
-        spectral_embedding = manifold_learning.SpectralEmbedding(
-            n_components=dim, affinity='precomputed', n_jobs=7)
+    def purchase_similarity_computation(self):
+        game_id_buyers_index_dict = self.game_id_buyers_index_dict
+        player_game_playtime_dict = self.player_game_playtime_dict
+        game_num = len(game_id_buyers_index_dict)
+        player_num = len(player_game_playtime_dict)
+        raw_copurchase_num_matrix = np.zeros([game_num, game_num])
+        total_purchase_num_array = np.ones([game_num])
+        count = 0
+        for player_id, game_playtime_dict in player_game_playtime_dict.items():
+            current_game_num = len(game_playtime_dict)
+            game_id_list = list(game_playtime_dict.keys())
+            game_index_list = [game_id_buyers_index_dict[game_id] for game_id in game_id_list]
+            for index_i in range(current_game_num):
+                game_index_i = game_index_list[index_i]
+                total_purchase_num_array[game_index_i] += 1
+                for index_j in range(index_i + 1, current_game_num):
+                    game_index_j = game_index_list[index_j]
+                    raw_copurchase_num_matrix[game_index_i, game_index_j] += 1
+                    raw_copurchase_num_matrix[game_index_j, game_index_i] += 1
+            count += 1
+            if count % 1000 == 0:
+                print("{:.3f} finished...".format(count / player_num))
+        # copurchase_similarity_matrix = np.log(raw_copurchase_num_matrix)
+        purchase_sum_matrix = total_purchase_num_array.reshape([-1, 1]) @ np.ones([1, game_num])
+        copurchase_similarity_matrix = raw_copurchase_num_matrix / (
+                purchase_sum_matrix + purchase_sum_matrix.T)
+        np.savez_compressed(
+            config.copurchase_similarity_matrix_file, copurchase_similarity_matrix=copurchase_similarity_matrix)
+        plotting.heatmap_plot(copurchase_similarity_matrix)
+        self.copurchase_similarity_matrix = copurchase_similarity_matrix
+        plt.show()
 
+    def similarity_embedding(self):
         max_item_num = self.max_item_num
         similarity_matrix = self.game_similarity_matrix[0:max_item_num, 0:max_item_num]
+        self.transformed_coordinates = similarity_embedding(
+            self.embedding_dim, similarity_matrix,
+            "{}_{}d".format(config.embedded_coordinates_laplacian_eigenmaps, self.embedding_dim))
 
-        transformed_coordinates = spectral_embedding.fit_transform(similarity_matrix)
-        np.savez_compressed(
-            "{}_{}d".format(config.embedded_coordinates_laplacian_eigenmaps, dim),
-            transformed_coordinates=transformed_coordinates)
-        self.transformed_coordinates = transformed_coordinates
+    def training_similarity_embedding(self):
+        self.transformed_coordinates = similarity_embedding(
+            self.embedding_dim, self.train_similarity_matrix,
+            "{}_{}d".format(config.embedded_train_coordinates, self.embedding_dim))
+        le_coordinates_dataframe = pd.DataFrame(
+            self.transformed_coordinates, index=self.train_game_id_list)
+        le_coordinates_dataframe.index.name = 'id'
+        le_coordinates_dataframe.to_excel(config.train_le_similarity_output_df)
+
+    def purchase_similarity_embedding(self):
+        max_item_num = self.max_item_num
+        game_id_buyers_index_dict = self.game_id_buyers_index_dict
+        similarity_matrix = self.copurchase_similarity_matrix[0:max_item_num, 0:max_item_num]
+        self.transformed_coordinates = similarity_embedding(
+            self.embedding_dim, similarity_matrix,
+            "{}_{}d".format(config.embedded_copurchase_coordinates, self.embedding_dim))
+        game_id_list = []
+        current_game_index_list = []
+        for game_id in self.game_id_list_training_set:
+            current_game_index_list.append(game_id_buyers_index_dict[game_id])
+            game_id_list.append(game_id)
+        copurchase_coordinates = self.transformed_coordinates[current_game_index_list, :]
+        le_coordinates_dataframe = pd.DataFrame(
+            copurchase_coordinates, index=game_id_list)
+        le_coordinates_dataframe.index.name = 'id'
+        le_coordinates_dataframe.to_excel(config.final_copurchase_similarity_output_df)
+        scatter_plotting(self.transformed_coordinates[:, 1:])
 
     def le_similarity_for_training_output(self):
         game_id_buyers_index_dict = self.game_id_buyers_index_dict
@@ -383,26 +440,25 @@ class UsersItemsStat(object):
 
     def spectral_clustering(self):
         game_similarity_matrix = self.game_similarity_matrix
-        complete_game_id_list = self.complete_game_id_list
         data_size = game_similarity_matrix.shape[0]
         spectral_clustering = SpectralClustering(
             n_clusters=self.cluster_num, affinity='precomputed', n_jobs=7)
         clustering_labels_array = spectral_clustering.fit_predict(game_similarity_matrix)
         counter = collections.Counter(clustering_labels_array)
         print(counter)
+        group_size_index_dict = {}
+        for order, index in enumerate(counter.keys()):
+            group_size_index_dict[index] = order
         np.savez_compressed(
             "{}".format(config.complete_cluster_labels_array),
             clustering_labels_array=clustering_labels_array)
         order_pair_list = [
-            (index, index + label * 10 * data_size)
+            (index, index + group_size_index_dict[label] * 10 * data_size)
             for index, label in enumerate(clustering_labels_array)]
         new_order_array = list(zip(*sorted(order_pair_list, key=lambda x: x[1])))[0]
         clustered_similarity_matrix = shuffle_symmetric_matrix(game_similarity_matrix, new_order_array)
         plotting.heatmap_plot(clustered_similarity_matrix, max_value=0.0008)
         plt.show()
-
-    # def cluster_feature_stat(self):
-
 
 
 def example_data_generator():
@@ -454,6 +510,54 @@ def shuffle_symmetric_matrix(input_matrix, target_order_list):
     row_shuffled_matrix = input_matrix[target_order_list, :]
     col_shuffled_matrix = row_shuffled_matrix[:, target_order_list]
     return col_shuffled_matrix
+
+
+def similarity_embedding(embedded_dim, similarity_matrix, file_name):
+    spectral_embedding = manifold_learning.SpectralEmbedding(
+        n_components=embedded_dim, affinity='precomputed', n_jobs=7)
+    transformed_coordinates = spectral_embedding.fit_transform(similarity_matrix)
+    np.savez_compressed(
+        file_name, transformed_coordinates=transformed_coordinates)
+    return transformed_coordinates
+
+
+def scatter_plotting(transformed_coordinates):
+    dim = transformed_coordinates.shape[1]
+    color_rgb = np.array([31, 119, 180]) / 255
+    alpha_value = 0.2
+    # x_lim = [-0.035, 0.035]
+    # x_lim = [None, None]
+    # x_lim = [-0.05, 0.05]
+    x_lim = [-0.001, 0.004]
+    # y_lim = [-0.06, 0.105]
+    # y_lim = [None, None]
+    # y_lim = [-0.1, 0.11]
+    y_lim = [-0.004, 0.006]
+    color_vector = np.concatenate([color_rgb, [alpha_value]])
+    if dim == 2:
+        plotting.scatter2d_plot(
+            transformed_coordinates, marker_size=3, color=color_vector, x_lim=x_lim, y_lim=y_lim)
+    elif dim == 3:
+        plotting.scatter3d_plot(
+            transformed_coordinates, marker_size=3, color=color_vector, x_lim=x_lim, y_lim=y_lim)
+    if x_lim[0] is not None:
+        outlier_loc = transformed_coordinates[:, 0] < x_lim[0]
+        print(np.count_nonzero(outlier_loc) / transformed_coordinates.shape[0])
+    if x_lim[1] is not None:
+        outlier_loc = transformed_coordinates[:, 0] > x_lim[1]
+        print(np.count_nonzero(outlier_loc) / transformed_coordinates.shape[0])
+    if y_lim[0] is not None:
+        outlier_loc = transformed_coordinates[:, 1] < y_lim[0]
+        print(np.count_nonzero(outlier_loc) / transformed_coordinates.shape[0])
+    if y_lim[1] is not None:
+        outlier_loc = transformed_coordinates[:, 1] > y_lim[1]
+        print(np.count_nonzero(outlier_loc) / transformed_coordinates.shape[0])
+    plt.show()
+
+
+def correlation_analysis_two_embedding(self):
+    complete_embedded_coordinates = self.transformed_coordinates
+    train_embedded_coordinates = self.transformed_coordinates_train
 
 
 def main():

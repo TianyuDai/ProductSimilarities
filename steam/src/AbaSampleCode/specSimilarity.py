@@ -3,8 +3,7 @@ import os, sys
 import numpy as np
 import pandas as pd
 
-import listspecs
-from parse import parse
+import comparecluster
 
 def importance(spec, value1, value2):
     #
@@ -23,33 +22,33 @@ Write similarity_*.txt"""
     if not os.path.isfile(fname):
         listspecs.listSpecs(spec)
     specDicts = {}
-    specCounts = []
     idx = 0
     with open(fname, 'r') as fin:
         for line in fin:
             a, b = line.rstrip().split('\t')
             specDicts[a] = idx
-            specCounts.append(int(b))
             idx += 1
-    specCounts = np.array(specCounts)
+    specCounts = np.zeros(idx)
     nValues = idx
     # then stat products
-    datahandle = parse('../data/steam_games_lite.json.gz')
+    games = comparecluster.readGames()
+    gameids = comparecluster.readGameIdData('train')
     dictItemSpecs = {}
-    idx = 0
-    for line in datahandle:
-        if spec in line:
-            specs = line[spec]
+    for gameid in gameids:
+        if spec in games[gameid]:
+            specs = games[gameid][spec]
             vec = np.zeros(nValues)
             for v in specs:
                 vec[specDicts[v]] = 1.0
+                specCounts[specDicts[v]] += 1.0
             dictItemSpecs[idx] = vec
             idx += 1
+            #if idx%100==0: print(idx, len(gameids))
     prodSpecVecs = np.array(pd.DataFrame(dictItemSpecs)) # item * spec array
     specNorms = np.sqrt(specCounts).reshape((1, -1))
-    similarityMat = np.divide( np.dot(prodSpecVecs, prodSpecVecs.T), np.dot(specNorms.T, specNorms))
+    similarityMat = np.nan_to_num(np.divide( np.dot(prodSpecVecs, prodSpecVecs.T), np.dot(specNorms.T, specNorms)))
     np.savetxt('similarity_'+spec+'.txt', similarityMat, fmt='%.6f')
-                    
+
 def querySpecSimilarity(spec, prefix='similarity_', val1=None, val2=None):
     """show example of spec similarities"""
     specDicts = {}
@@ -92,5 +91,5 @@ def querySpecSimilarity(spec, prefix='similarity_', val1=None, val2=None):
 if __name__ == '__main__':
     # generates similarity_ file
     
-    # evalProductSpecs('tags')
-    querySpecSimilarity('tags', prefix='purchaseSimilarity_', val1='Nonlinear')
+    evalProductSpecs('tags')
+    #querySpecSimilarity('tags', prefix='purchaseSimilarity_', val1='Nonlinear')

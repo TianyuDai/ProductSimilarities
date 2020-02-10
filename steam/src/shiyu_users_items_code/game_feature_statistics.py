@@ -25,6 +25,7 @@ sentiment_dict = {
 class GameItemStat(object):
     def __init__(self):
         self.input_file_path = ""
+        self.complete_game_id_list = []
         self.id_item_dict = None
         self.name_id_dict = None
         self.game_id_purchase_number_order = None
@@ -39,19 +40,28 @@ class GameItemStat(object):
         self.max_item_num = -1
         self.game_id_feature_dict = {}
         self.metascore_list = []
+        self.cluster_labels_array = None
+        self.game_id_list_training_set = None
+        self.game_id_list_testing_set = None
 
     def hook_prepare(self):
         self.one_hot_feature_threshold = [85, 4100]
         self.max_item_num = 8500
 
-        self.execute_loop = True
-        id_item_dict = True
+        self.execute_loop = False
+        complete_game_id_list = True
+        id_item_dict = False
+        game_id_list_training_set = True
+        game_id_list_testing_set = True
         game_id_feature_dict = True
-        final_game_id_set = True
-        one_hot_feature_dict = True
+        final_game_id_set = False
+        one_hot_feature_dict = False
+        cluster_labels_array = True
 
         self.input_file_path = config.steam_games_file
-        self.item_loader(game_id_feature_dict, id_item_dict, final_game_id_set, one_hot_feature_dict)
+        self.item_loader(
+            complete_game_id_list, game_id_feature_dict, game_id_list_training_set, game_id_list_testing_set,
+            id_item_dict, final_game_id_set, one_hot_feature_dict, cluster_labels_array)
 
     def hook_each_line(self, input_dict):
         self.stat_features_and_price(input_dict)
@@ -60,12 +70,21 @@ class GameItemStat(object):
     def hook_final(self):
         # self.game_feature_distribution_plot()
         # self.result_saver()
-        self.final_game_feature_output()
+        # self.final_game_feature_output()
+        self.training_game_feature_data_extraction()
 
     def item_loader(
-            self, game_id_feature_dict=False, id_item_dict=False, final_game_id_set=False, one_hot_feature_set=False):
+            self, complete_game_id_list=False, game_id_feature_dict=False, game_id_list_training_set=False,
+            game_id_list_testing_set=False, id_item_dict=False, final_game_id_set=False, one_hot_feature_set=False,
+            cluster_labels_array=False):
+        if complete_game_id_list:
+            self.complete_game_id_list = config.gzip_load(config.complete_game_id_list_file)
         if game_id_feature_dict:
             self.game_id_feature_dict = config.gzip_load(config.game_id_feature_dict)
+        if game_id_list_training_set:
+            self.game_id_list_training_set = config.gzip_load(config.final_train_data_game_id_list)
+        if game_id_list_testing_set:
+            self.game_id_list_testing_set = config.gzip_load(config.final_test_data_game_id_list)
         if id_item_dict:
             self.id_item_dict = config.gzip_load(config.game_id_name_dict_file)
             self.name_id_dict = {game_name: game_id for game_id, game_name in self.id_item_dict.items()}
@@ -75,6 +94,9 @@ class GameItemStat(object):
                 [game_id for game_id, index in self.game_id_purchase_number_order.items() if index < self.max_item_num])
         if one_hot_feature_set:
             self.one_hot_feature_dict = config.gzip_load(config.one_hot_feature_dict)
+        if cluster_labels_array:
+            clustering_labels_array = np.load(config.complete_cluster_labels_array)
+            self.cluster_labels_array = clustering_labels_array['clustering_labels_array']
 
     def stat_features_and_price(self, input_dict):
         def price_or_free(raw_price_content):
@@ -268,6 +290,15 @@ class GameItemStat(object):
         final_data_frame = pd.DataFrame(data_dict_list, index=game_id_list)
         final_data_frame.to_excel(config.final_game_feature_input_df)
         config.gzip_save(game_id_list, config.final_nn_data_game_id_list)
+
+    def training_game_feature_data_extraction(self):
+        train_game_id_list = self.game_id_list_training_set
+        test_game_id_list = self.game_id_list_testing_set
+        complete_data_frame = config.load_pandas(config.final_game_feature_input_df)
+        train_data_frame = complete_data_frame.loc[train_game_id_list, :]
+        test_data_frame = complete_data_frame.loc[test_game_id_list, :]
+        train_data_frame.to_excel(config.train_game_feature_input_df)
+        test_data_frame.to_excel(config.test_game_feature_input_df)
 
 
 def main():
