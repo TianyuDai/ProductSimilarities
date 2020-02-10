@@ -1,5 +1,6 @@
 *.json
 *.pkl.gz
+*.json.gz
 !australian_users_items_lite.example.json
 !steam_games_lite.example.json
 game_weighted_similarity_matrix.npz
