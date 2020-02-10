@@ -1,7 +1,11 @@
 product_graph
-similarity_tags.txt
-stat_tags.txt
+*.txt
+*.txt
 
 *.png
 *.npy
 *.txt
+*.pkl
+*.pdf
+
+__pycache__
