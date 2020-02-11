@@ -6,17 +6,17 @@ def matricesCorrelation(matrix_1, matrix_2):
     corr_list = []
     # print(matrix_1.shape)
     for i in range(len(matrix_1)): 
-        v_1 = matrix_1[i]
-        v_2 = matrix_2[i]
+        v_1 = matrix_1[i, :]
+        v_2 = matrix_2[i, :]
         # print(v_1.shape, matrix_1[i].shape)
-        vector_1 = np.argsort(np.argsort(v_1))
-        vector_2 = np.argsort(np.argsort(v_2))
-        # vector_1 = rankdata(v_1)
-        # vector_2 = rankdata(v_2)
-        corr = np.corrcoef(vector_1, vector_2)
-        # r, _ = pearsonr(vector_1, vector_2)
-        corr_list.append(corr[0, 1])
-        # corr_list.append(r)
+        # vector_1 = np.argsort(np.argsort(v_1))
+        # vector_2 = np.argsort(np.argsort(v_2))
+        vector_1 = rankdata(v_1)
+        vector_2 = rankdata(v_2)
+        # corr = np.corrcoef(vector_1, vector_2)
+        r, _ = pearsonr(vector_1, vector_2)
+        # corr_list.append(corr[0, 1])
+        corr_list.append(r)
         # print(r)
     return corr_list
 
