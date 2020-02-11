@@ -1,6 +1,4 @@
 product_graph
-*.txt
-
 *.png
 *.npy
 *.npz

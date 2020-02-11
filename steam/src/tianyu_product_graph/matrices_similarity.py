@@ -35,7 +35,7 @@ def corrDistribution(arr, name_1, name_2):
     plt.savefig('correlation_'+name_1+'_'+name_2)
 
 if __name__ == '__main__':
-    """    
+        
     matrix_seller = np.load('seller_game_similarity.npy')
     matrix_seller_copurchase = np.load('seller_purchase_game_similarity.npy')
     matrix_buyer_copurchase = np.load('shiyu_buyer_copurchase_similarity.npy')
@@ -48,7 +48,10 @@ if __name__ == '__main__':
         # print(matrix_seller[i, i], matrix_seller_copurchase[i, i])
         matrix_seller[i, i] = 0
         matrix_seller_copurchase[i, i] = 0 
-        
+    
+    matrix_buyer_copurchase = -1 * matrix_buyer_copurchase
+    matrix_buyer_coplay = -1 * matrix_buyer_coplay
+    
     matrix_list = [matrix_seller, matrix_seller_copurchase, matrix_buyer_copurchase, matrix_buyer_coplay, matrix_copurchase, matrix_coplay]
     name_list = ['seller-centric', 'buyer-centric', 'co-play standard', 'seller-centric with co-purchase input', 'co-purchase standard']
     corr_list = []
@@ -62,7 +65,7 @@ if __name__ == '__main__':
     corr_plot.append(corr_list[7])
     corr_plot.append(corr_list[10])
     corr_plot.append(corr_list[14])
-    corr_plot.append(corr_list[4])
+    corr_plot.append(corr_list[11])
     corr_plot.append(corr_list[13])
 
     num_list = ['(a)', '(b)', '(c)', '(d)', '(e)', '(f)']
@@ -72,8 +75,8 @@ if __name__ == '__main__':
     for corr, ax, num in zip(corr_plot, axs.ravel(), num_list): 
         ax.hist(corr, 50, density=True, range=(-1, 1))
         ax.set_xlim(-1.2, 1.2)
-        ax.set_ylim(0, 6.5)
-        ax.text(-1.1, 6, num, size=16)
+        ax.set_ylim(0, 3.2)
+        ax.text(-1.1, 2.9, num, size=16)
         if (num == num_list[3] or num == num_list[4] or num == num_list[5]): 
             ax.set_xlabel('correlation', fontsize=16)
         if (num == num_list[0] or num == num_list[3]): 
@@ -82,7 +85,7 @@ if __name__ == '__main__':
         else: 
             ax.tick_params(direction="in", which='both', labelsize=16, labelleft=False)
         ax.axvline(x=0, color='black')
-    plt.savefig('correlation')
+    plt.savefig('correlation.pdf')
     """
     
     data = np.load('train_test_copurchase_similarity_matrix.npz', 'r')
@@ -98,4 +101,4 @@ if __name__ == '__main__':
     plt.xlim(-1, 1)
     # plt.title('The correlation of game similarity between\n'+name_1+' and '+name_2)
     plt.savefig('correlation_buyer_copurchase.pdf')
-    
+    """

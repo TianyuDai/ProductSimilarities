@@ -66,7 +66,7 @@ if __name__ == '__main__':
     data_organizer.specDivider()
     
     game_similarity = GameSimilarity('tags', data_organizer)
-    # game_similarity.seller_similarity('similarity_tags.txt', 'seller_game_similarity')
-    # game_similarity.seller_similarity('copurchaseSimilarity_tags.txt', 'seller_purchase_game_similarity')
-    game_similarity.buyer_similarity('../../data/predicted_game_similarity_data_frame.xlsx', 'real_buyer_game_similarity')
-    game_similarity.buyer_similarity('../../data/output_game_similarity_data_frame_for_training.xlsx', 'embedded_game_similarity')
+    game_similarity.seller_similarity('similarity_tags.txt', 'seller_game_similarity')
+    game_similarity.seller_similarity('copurchaseSimilarity_tags.txt', 'seller_purchase_game_similarity')
+    # game_similarity.buyer_similarity('../../data/predicted_game_similarity_data_frame.xlsx', 'real_buyer_game_similarity')
+    # game_similarity.buyer_similarity('../../data/output_game_similarity_data_frame_for_training.xlsx', 'embedded_game_similarity')

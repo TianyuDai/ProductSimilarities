@@ -3,15 +3,15 @@ import gzip
 import pickle
 import dataset_divider
 
-def readSimilarityFiles(fname): 
-    game_similarity_list = np.load(fname, 'r')
-    for k in game_similarity_list: 
-        print(k)
-    game_similarity = game_similarity_list['test_similarity_matrix']
-    for i in range(len(game_similarity)): 
+def readSimilarityFiles(infname, matname, outfname): 
+    game_similarity_list = np.load(infname, 'r')
+    # for k in game_similarity_list: 
+    #    print(k)
+    game_similarity = game_similarity_list[matname]
+    # for i in range(len(game_similarity)): 
     #     print(np.max(game_similarity[i]))
-        print(game_similarity[i, i])
-    np.save('shiyu_coplay_similarity', game_similarity)
+    #     print(game_similarity[i, i])
+    np.save(outfname, game_similarity)
 
 def testValideGames(data_organizer): 
     test_game_id = data_organizer.test_game_id
@@ -28,4 +28,7 @@ if __name__ == '__main__':
     data_organizer.specDivider()
 
     # testValideGames(data_organizer)
-    readSimilarityFiles('train_test_similarity_matrix.npz')
+    readSimilarityFiles('train_test_similarity_matrix.npz', 'test_similarity_matrix', 'shiyu_coplay_similarity')
+    readSimilarityFiles('train_test_copurchase_similarity_matrix.npz', 'test_similarity_matrix', 'shiyu_copurchase_similarity')
+    readSimilarityFiles('predicted_train_test_coplay_similarity_matrix.npz', 'prediction_test_similarity_matrix', 'shiyu_buyer_coplay_similarity')
+    readSimilarityFiles('predicted_train_test_copurchase_similarity_matrix.npz', 'prediction_test_similarity_matrix', 'shiyu_buyer_copurchase_similarity')

@@ -37,6 +37,7 @@ def coPurchaseSimilarity(test_game_id, outfname):
                 # print(game_i, game_j)
                 if game_i in test_game_id and game_j in test_game_id: 
                     game_similarity[test_game_id.index(game_i), test_game_id.index(game_j)] += 1
+                    game_similarity[test_game_id.index(game_j), test_game_id.index(game_i)] += 1
         idk += 1
     for i in range(len(game_similarity)): 
         for j in range(len(game_similarity)): 
@@ -46,7 +47,7 @@ def coPurchaseSimilarity(test_game_id, outfname):
 if __name__ == '__main__': 
     infname = '../../data/australian_users_items.json'
     outfname = 'co-purchase_game_id.pkl'
-    # userDataReader(infname, outfname)
+    userDataReader(infname, outfname)
     data_organizer = dataset_divider.DataOrganizer('tags')
     data_organizer.trainTestDivider()
     coPurchaseSimilarity(data_organizer.test_game_id, outfname)
