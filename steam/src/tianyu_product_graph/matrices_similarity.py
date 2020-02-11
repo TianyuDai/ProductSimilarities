@@ -35,7 +35,7 @@ def corrDistribution(arr, name_1, name_2):
     plt.savefig('correlation_'+name_1+'_'+name_2)
 
 if __name__ == '__main__':
-    
+    """    
     matrix_seller = np.load('seller_game_similarity.npy')
     matrix_seller_copurchase = np.load('seller_purchase_game_similarity.npy')
     matrix_buyer_copurchase = np.load('shiyu_buyer_copurchase_similarity.npy')
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     matrix_copurchase = np.load('shiyu_copurchase_similarity.npy')
     matrix_coplay = np.load('shiyu_coplay_similarity.npy')
     # matrix_cop_standard = np.load('co-purchase_game_similarity.npy')
-    """ 
+ 
     for i in range(len(matrix_seller)): 
         # print(matrix_seller[i, i], matrix_seller_copurchase[i, i])
         matrix_seller[i, i] = 0
