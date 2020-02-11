@@ -55,7 +55,7 @@ class GameSimilarity:
                 y_i = game_euclidean.loc[game_i, 1]
                 x_j = game_euclidean.loc[game_j, 0]
                 y_j = game_euclidean.loc[game_j, 1]
-                game_similarity[i, j] = np.sqrt((x_i-x_j)**2+(y_i-y_j)**2)
+                game_similarity[i, j] = np.exp(-1.*(np.sqrt((x_i-x_j)**2+(y_i-y_j)**2)))
 
         np.save(buyer_similarity_fname, game_similarity)
         
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     data_organizer.specDivider()
     
     game_similarity = GameSimilarity('tags', data_organizer)
-    game_similarity.seller_similarity('similarity_tags.txt', 'seller_game_similarity')
-    game_similarity.seller_similarity('purchaseSimilarity_tags.txt', 'seller_purchase_game_similarity')
-    game_similarity.buyer_similarity('../../data/predicted_game_similarity_data_frame.xlsx', 'buyer_game_similarity')
-    game_similarity.buyer_similarity('../../data/output_game_similarity_data_frame_for_training.xlsx', 'standard_game_similarity')
+    # game_similarity.seller_similarity('similarity_tags.txt', 'seller_game_similarity')
+    # game_similarity.seller_similarity('copurchaseSimilarity_tags.txt', 'seller_purchase_game_similarity')
+    game_similarity.buyer_similarity('../../data/predicted_game_similarity_data_frame.xlsx', 'real_buyer_game_similarity')
+    game_similarity.buyer_similarity('../../data/output_game_similarity_data_frame_for_training.xlsx', 'embedded_game_similarity')

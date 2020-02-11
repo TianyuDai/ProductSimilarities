@@ -1,9 +1,9 @@
 product_graph
 *.txt
-*.txt
 
 *.png
 *.npy
+*.npz
 *.txt
 *.pkl
 *.pdf

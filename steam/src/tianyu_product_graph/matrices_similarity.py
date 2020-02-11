@@ -1,13 +1,23 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.stats import rankdata, pearsonr
 
 def matricesCorrelation(matrix_1, matrix_2): 
     corr_list = []
+    # print(matrix_1.shape)
     for i in range(len(matrix_1)): 
-        vector_1 = matrix_1[i]
-        vector_2 = matrix_2[i]
-        corr = np.corrcoef(vector_1, vector_2)
-        corr_list.append(corr[0, 1])
+        v_1 = matrix_1[i, :]
+        v_2 = matrix_2[i, :]
+        # print(v_1.shape, matrix_1[i].shape)
+        # vector_1 = np.argsort(np.argsort(v_1))
+        # vector_2 = np.argsort(np.argsort(v_2))
+        vector_1 = rankdata(v_1)
+        vector_2 = rankdata(v_2)
+        # corr = np.corrcoef(vector_1, vector_2)
+        r, _ = pearsonr(vector_1, vector_2)
+        # corr_list.append(corr[0, 1])
+        corr_list.append(r)
+        # print(r)
     return corr_list
 
 def matricesDistance(matrix_1, matrix_2): 
@@ -22,16 +32,24 @@ def corrDistribution(arr, name_1, name_2):
     plt.ylabel('N')
     plt.xlim(-1, 1)
     # plt.title('The correlation of game similarity between\n'+name_1+' and '+name_2)
-    plt.savefig('correlation_'+name_1+'_'+name_2+'.pdf')
+    plt.savefig('correlation_'+name_1+'_'+name_2)
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
+    
     matrix_seller = np.load('seller_game_similarity.npy')
-    matrix_buyer = np.load('buyer_game_similarity.npy')
-    matrix_standard = np.load('standard_game_similarity.npy')
-    matrix_purchase = np.load('seller_purchase_game_similarity.npy')
-    matrix_cop_standard = np.load('co-purchase_game_similarity.npy')
-
-    matrix_list = [matrix_seller, matrix_buyer, matrix_standard, matrix_purchase, matrix_cop_standard]
+    matrix_seller_copurchase = np.load('seller_purchase_game_similarity.npy')
+    matrix_buyer_copurchase = np.load('shiyu_buyer_copurchase_similarity.npy')
+    matrix_buyer_coplay = np.load('shiyu_buyer_coplay_similarity.npy')
+    matrix_copurchase = np.load('shiyu_copurchase_similarity.npy')
+    matrix_coplay = np.load('shiyu_coplay_similarity.npy')
+    # matrix_cop_standard = np.load('co-purchase_game_similarity.npy')
+     
+    for i in range(len(matrix_seller)): 
+        # print(matrix_seller[i, i], matrix_seller_copurchase[i, i])
+        matrix_seller[i, i] = 0
+        matrix_seller_copurchase[i, i] = 0 
+        
+    matrix_list = [matrix_seller, matrix_seller_copurchase, matrix_buyer_copurchase, matrix_buyer_coplay, matrix_copurchase, matrix_coplay]
     name_list = ['seller-centric', 'buyer-centric', 'co-play standard', 'seller-centric with co-purchase input', 'co-purchase standard']
     corr_list = []
     for i in range(len(matrix_list)): 
@@ -41,11 +59,11 @@ if __name__ == '__main__':
     
     corr_plot = []
     corr_plot.append(corr_list[3])
-    corr_plot.append(corr_list[9])
-    corr_plot.append(corr_list[8])
-    corr_plot.append(corr_list[1])
     corr_plot.append(corr_list[7])
+    corr_plot.append(corr_list[10])
+    corr_plot.append(corr_list[14])
     corr_plot.append(corr_list[4])
+    corr_plot.append(corr_list[13])
 
     num_list = ['(a)', '(b)', '(c)', '(d)', '(e)', '(f)']
     fig, axs = plt.subplots(nrows = 2, ncols = 3, figsize=(16, 8))
@@ -64,12 +82,20 @@ if __name__ == '__main__':
         else: 
             ax.tick_params(direction="in", which='both', labelsize=16, labelleft=False)
         ax.axvline(x=0, color='black')
-    plt.savefig('correlation.pdf')
+    plt.savefig('correlation')
     """
-    spec = np.loadtxt('similarity_tags.txt')
-    spec_cop = np.loadtxt('purchaseSimilarity_tags.txt')
-    for i in range(len(spec)): 
-        spec[i, i] = 0
-    corr = matricesCorrelation(spec, spec_cop)
-    corrDistribution(corr, 'seller-centric tag', 'seller-centric with co-purchase input tag')
+    
+    data = np.load('train_test_copurchase_similarity_matrix.npz', 'r')
+    pred = np.load('predicted_train_test_copurchase_similarity_matrix.npz', 'r')
+    corr = matricesCorrelation(data['test_similarity_matrix'], pred['prediction_test_similarity_matrix'])
+    # corrDistribution(corr, 'coplay', 'embedded')
+    
+    plt.figure()
+    plt.hist(corr, 50, density=True, range=(-1, 1))
+    plt.axvline(x=0, color='black')
+    plt.xlabel('Corr(q)')
+    plt.ylabel('N')
+    plt.xlim(-1, 1)
+    # plt.title('The correlation of game similarity between\n'+name_1+' and '+name_2)
+    plt.savefig('correlation_buyer_copurchase')
     """
