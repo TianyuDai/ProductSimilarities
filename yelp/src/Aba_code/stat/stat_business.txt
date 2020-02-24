@@ -1,0 +1,6 @@
+Total business: 192609
+categories	192127
+city	192609
+is_open	192609
+review_count	192609
+state	192609

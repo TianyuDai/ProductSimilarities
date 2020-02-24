@@ -1,0 +1,1300 @@
+& Probates	85
+3D Printing	13
+ATV Rentals/Tours	51
+Acai Bowls	100
+Accessories	2214
+Accountants	325
+Acne Treatment	44
+Active Life	9521
+Acupuncture	745
+Addiction Medicine	32
+Adoption Services	10
+Adult	159
+Adult Education	182
+Adult Entertainment	380
+Advertising	237
+Aerial Fitness	23
+Aerial Tours	22
+Aestheticians	34
+Afghan	133
+African	148
+Air Duct Cleaning	234
+Aircraft Dealers	6
+Aircraft Repairs	6
+Airlines	135
+Airport Lounges	40
+Airport Shuttles	331
+Airport Terminals	29
+Airports	208
+Airsoft	16
+Allergists	104
+Alternative Medicine	30
+Amateur Sports Teams	217
+American (New)	4882
+American (Traditional)	7107
+Amusement Parks	399
+Anesthesiologists	35
+Animal Assisted Therapy	3
+Animal Physical Therapy	5
+Animal Shelters	144
+Antiques	577
+Apartment Agents	4
+Apartments	2576
+Appliances	856
+Appliances & Repair	872
+Appraisal Services	71
+Aquarium Services	45
+Aquariums	46
+Arabian	69
+Arcades	383
+Archery	42
+Architects	54
+Architectural Tours	5
+Argentine	46
+Armenian	9
+Art Classes	225
+Art Galleries	781
+Art Museums	30
+Art Restoration	11
+Art Schools	157
+Art Space Rentals	6
+Art Supplies	360
+Art Tours	8
+Artificial Turf	93
+Arts & Crafts	1793
+Arts & Entertainment	6304
+Asian Fusion	1953
+Assisted Living Facilities	86
+Astrologers	6
+Attraction Farms	12
+Auction Houses	73
+Audio/Visual Equipment Rental	9
+Audiologist	90
+Australian	11
+Austrian	8
+Auto Customization	455
+Auto Detailing	1087
+Auto Electric Services	3
+Auto Glass Services	887
+Auto Insurance	456
+Auto Loan Providers	224
+Auto Parts & Supplies	2023
+Auto Repair	6140
+Auto Security	43
+Auto Upholstery	69
+Automotive	13203
+Aviation Services	3
+Awnings	55
+Axe Throwing	20
+Ayurveda	12
+Baby Gear & Furniture	360
+Backflow Services	8
+Backshop	1
+Badminton	10
+Bagels	615
+Bail Bondsmen	33
+Bakeries	3711
+Balloon Services	35
+Bangladeshi	21
+Bankruptcy Law	183
+Banks & Credit Unions	1355
+Bar Crawl	15
+Barbeque	1814
+Barbers	2010
+Barre Classes	165
+Bars	11341
+Bartenders	46
+Bartending Schools	15
+Baseball Fields	14
+Basketball Courts	17
+Basque	30
+Battery Stores	107
+Batting Cages	31
+Beach Bars	4
+Beach Equipment Rentals	7
+Beach Volleyball	1
+Beaches	68
+Beauty & Spas	19370
+Bed & Breakfast	203
+Beer	2255
+Beer Bar	470
+Beer Garden	2
+Beer Gardens	80
+Beer Hall	1
+Beer Tours	25
+Behavior Analysts	7
+Belgian	51
+Bespoke Clothing	127
+Beverage Store	30
+Bicycles	9
+Bike Parking	2
+Bike Rentals	265
+Bike Repair	4
+Bike Repair/Maintenance	284
+Bike Sharing	6
+Bike Shop	7
+Bike tours	11
+Bikes	556
+Bingo Halls	16
+Bird Shops	16
+Bistros	144
+Blood & Plasma Donation Centers	43
+Blow Dry/Out Services	667
+Boat Charters	51
+Boat Dealers	46
+Boat Parts & Supplies	3
+Boat Repair	88
+Boat Tours	18
+Boating	171
+Bocce Ball	1
+Body Contouring	66
+Body Shops	1306
+Bookbinding	10
+Bookkeepers	64
+Books	1342
+Bookstores	543
+Boot Camps	390
+Botanical Gardens	40
+Boudoir Photography	56
+Bounce House Rentals	22
+Bowling	234
+Boxing	217
+Brasseries	132
+Brazilian	90
+Brazilian Jiu-jitsu	54
+Breakfast & Brunch	5381
+Breweries	543
+Brewing Supplies	32
+Brewpubs	69
+Bridal	640
+British	156
+Bubble Soccer	5
+Bubble Tea	486
+Buddhist Temples	20
+Buffets	893
+Building Supplies	887
+Bulgarian	1
+Burgers	5404
+Burmese	12
+Bus Rental	6
+Bus Tours	59
+Buses	54
+Business Consulting	125
+Business Financing	28
+Business Law	130
+Butcher	217
+CPR Classes	49
+CSA	17
+Cabaret	39
+Cabinetry	319
+Cafes	3232
+Cafeteria	42
+Cajun/Creole	303
+Calabrian	1
+Calligraphy	1
+Cambodian	42
+Campgrounds	60
+Canadian (New)	1909
+Candle Stores	57
+Candy Stores	336
+Cannabis Clinics	174
+Cannabis Collective	9
+Cannabis Dispensaries	104
+Cannabis Tours	10
+Cantonese	106
+Car Auctions	9
+Car Brokers	19
+Car Buyers	64
+Car Dealers	2062
+Car Inspectors	18
+Car Rental	945
+Car Share Services	15
+Car Stereo Installation	235
+Car Wash	1160
+Car Window Tinting	212
+Cardio Classes	124
+Cardiologists	123
+Cards & Stationery	351
+Career Counseling	99
+Caribbean	634
+Caricatures	10
+Carousels	3
+Carpenters	88
+Carpet Cleaning	939
+Carpet Dyeing	4
+Carpet Installation	188
+Carpeting	466
+Casinos	470
+Caterers	2525
+Ceremonial Clothing	1
+Challenge Courses	68
+Champagne Bars	22
+Check Cashing/Pay-day Loans	195
+Cheerleading	8
+Cheese Shops	201
+Cheese Tasting Classes	3
+Cheesesteaks	214
+Chicken Shop	574
+Chicken Wings	2705
+Child Care & Day Care	746
+Childbirth Education	19
+Childproofing	14
+Children's Clothing	550
+Children's Museums	10
+Chimney Sweeps	41
+Chinese	4428
+Chinese Martial Arts	15
+Chiropractors	1354
+Chocolatiers & Shops	466
+Christmas Markets	1
+Christmas Trees	45
+Churches	416
+Churros	1
+Cideries	11
+Cigar Bars	22
+Cinema	490
+Circuit Training Gyms	40
+Civic Center	7
+Climbing	54
+Clock Repair	24
+Clothing Rental	43
+Clowns	18
+Club Crawl	14
+Cocktail Bars	1246
+Coffee & Tea	7321
+Coffee & Tea Supplies	44
+Coffee Roasteries	183
+Coffeeshops	18
+College Counseling	14
+Colleges & Universities	298
+Colombian	48
+Colonics	39
+Comedy Clubs	166
+Comfort Food	860
+Comic Books	197
+Commercial Real Estate	224
+Commercial Truck Dealers	37
+Commercial Truck Repair	76
+Commissioned Artists	16
+Community Centers	54
+Community Gardens	5
+Community Service/Non-Profit	577
+Computers	593
+Concept Shops	4
+Concierge Medicine	18
+Condominiums	46
+Contract Law	8
+Contractors	3151
+Convenience Stores	1867
+Conveyor Belt Sushi	6
+Cooking Classes	74
+Cooking Schools	108
+Cosmetic Dentists	2058
+Cosmetic Surgeons	418
+Cosmetics & Beauty Supply	2148
+Cosmetology Schools	168
+Costumes	152
+Counseling & Mental Health	410
+Countertop Installation	153
+Country Clubs	84
+Country Dance Halls	19
+Couriers & Delivery Services	382
+Court Reporters	1
+Courthouses	31
+Crane Services	5
+Cremation Services	41
+Creperies	261
+Criminal Defense Law	299
+Cryotherapy	34
+Cuban	77
+Cultural Center	38
+Cupcakes	338
+Currency Exchange	30
+Custom Cakes	277
+Customized Merchandise	154
+Customs Brokers	1
+Cycling Classes	93
+Czech	6
+Czech/Slovakian	1
+DIY Auto Shop	5
+DJs	197
+DUI Law	211
+DUI Schools	1
+Damage Restoration	479
+Dance Clubs	845
+Dance Schools	207
+Dance Studios	367
+Dance Wear	25
+Data Recovery	185
+Day Camps	40
+Day Spas	2742
+Debt Relief Services	41
+Decks & Railing	79
+Delicatessen	144
+Delis	1955
+Demolition Services	35
+Dental Hygienists	63
+Dentists	3540
+Department Stores	1642
+Departments of Motor Vehicles	142
+Dermatologists	296
+Desserts	3332
+Diagnostic Imaging	227
+Diagnostic Services	496
+Dialysis Clinics	1
+Dietitians	11
+Digitizing Services	5
+Dim Sum	302
+Diners	1433
+Dinner Theater	20
+Disability Law	7
+Disc Golf	25
+Discount Store	921
+Distilleries	43
+Dive Bars	631
+Dive Shops	8
+Diving	55
+Divorce & Family Law	337
+Do-It-Yourself Food	215
+Doctors	5867
+Dog Parks	155
+Dog Walkers	317
+Dominican	18
+Donairs	66
+Donation Center	43
+Donuts	774
+Door Sales/Installation	291
+Doulas	36
+Drive-In Theater	10
+Drive-Thru Bars	1
+Driving Schools	147
+Drones	6
+Drugstores	1684
+Dry Cleaning	436
+Dry Cleaning & Laundry	1418
+Drywall Installation & Repair	217
+Dumpster Rental	24
+Duplication Services	4
+Duty-Free Shops	5
+EV Charging Stations	3
+Ear Nose & Throat	117
+Eastern European	1
+Eatertainment	17
+Editorial Services	25
+Education	3314
+Educational Services	275
+Egyptian	19
+Elder Care Planning	12
+Electricians	534
+Electricity Suppliers	2
+Electronics	1629
+Electronics Repair	656
+Elementary Schools	548
+Embassy	12
+Embroidery & Crochet	110
+Emergency Medicine	9
+Emergency Pet Hospital	81
+Emergency Rooms	51
+Empanadas	16
+Employment Agencies	224
+Employment Law	67
+Endocrinologists	57
+Endodontists	622
+Engraving	44
+Entertainment Law	1
+Environmental Abatement	30
+Environmental Testing	21
+Erotic Massage	3
+Escape Games	185
+Estate Liquidation	45
+Estate Planning Law	179
+Estheticians	28
+Ethical Grocery	21
+Ethiopian	84
+Ethnic Food	1103
+Ethnic Grocery	33
+Event Photography	546
+Event Planning & Services	10371
+Excavation Services	20
+Experiences	1
+Eyebrow Services	490
+Eyelash Service	1856
+Eyewear & Opticians	1162
+Fabric Stores	221
+Face Painting	38
+Falafel	137
+Family Practice	793
+Farm Equipment Repair	29
+Farmers Market	437
+Farming Equipment	44
+Farms	52
+Fashion	7798
+Fast Food	7257
+Fences & Gates	191
+Fencing Clubs	2
+Feng Shui	6
+Fertility	62
+Festivals	459
+Filipino	235
+Financial Advising	328
+Financial Services	3082
+Fingerprinting	24
+Fire Departments	10
+Fire Protection Services	45
+Firearm Training	60
+Fireplace Services	97
+Firewood	25
+Fireworks	11
+First Aid Classes	34
+Fish & Chips	319
+Fishing	43
+Fitness & Instruction	4646
+Fitness/Exercise Equipment	98
+Flea Markets	49
+Flight Instruction	37
+Float Spa	31
+Flooring	908
+Floral Designers	174
+Florists	1098
+Flowers	7
+Flowers & Gifts	2180
+Flyboarding	2
+Fondue	50
+Food	29989
+Food Banks	11
+Food Court	202
+Food Delivery Services	979
+Food Stands	335
+Food Tours	39
+Food Trucks	857
+Formal Wear	314
+Foundation Repair	28
+Framing	157
+Free Diving	5
+French	1027
+Fruits & Veggies	412
+Fuel Docks	3
+Funeral Services & Cemeteries	195
+Fur Clothing	12
+Furniture Assembly	65
+Furniture Rental	24
+Furniture Repair	74
+Furniture Reupholstery	244
+Furniture Stores	1947
+Game Meat	1
+Game Truck Rental	9
+Garage Door Services	336
+Gardeners	314
+Gas Stations	1617
+Gastroenterologist	72
+Gastropubs	557
+Gay Bars	176
+Gelato	140
+Gemstones & Minerals	11
+General Dentistry	2768
+General Festivals	1
+General Litigation	190
+Generator Installation/Repair	22
+Geneticists	1
+German	103
+Gerontologists	5
+Gift Shops	763
+Glass & Mirrors	226
+Glass Blowing	7
+Gluten-Free	858
+Go Karts	41
+Gold Buyers	170
+Golf	590
+Golf Cart Dealers	16
+Golf Cart Rentals	17
+Golf Equipment	89
+Golf Equipment Shops	17
+Golf Lessons	62
+Graphic Design	569
+Greek	1086
+Grilling Equipment	35
+Grocery	3609
+Grout Services	119
+Guamanian	2
+Guest Houses	36
+Guitar Stores	78
+Gun/Rifle Ranges	153
+Guns & Ammo	274
+Gunsmith	21
+Gutter Services	157
+Gymnastics	124
+Gyms	2316
+Habilitative Services	2
+Hainan	1
+Hair Extensions	1048
+Hair Loss Centers	75
+Hair Removal	4002
+Hair Salons	6955
+Hair Stylists	1960
+Haitian	14
+Hakka	45
+Halal	620
+Halfway Houses	1
+Halotherapy	12
+Handyman	574
+Hang Gliding	1
+Hardware Stores	816
+Hats	64
+Haunted Houses	35
+Hawaiian	329
+Hazardous Waste Disposal	10
+Head Shops	179
+Health & Medical	17171
+Health Coach	36
+Health Insurance Offices	32
+Health Markets	790
+Health Retreats	29
+Hearing Aid Providers	75
+Hearing Aids	2
+Heating & Air Conditioning/HVAC	1539
+Henna Artists	68
+Hepatologists	6
+Herbal Shops	15
+Herbs & Spices	115
+High Fidelity Audio Equipment	32
+Hiking	201
+Himalayan/Nepalese	63
+Hindu Temples	7
+Historical Tours	46
+Hobby Shops	783
+Hockey Equipment	15
+Holiday Decorating Services	15
+Holiday Decorations	37
+Holistic Animal Care	13
+Home & Garden	6489
+Home & Rental Insurance	420
+Home Automation	148
+Home Cleaning	1278
+Home Decor	2125
+Home Developers	20
+Home Energy Auditors	34
+Home Health Care	268
+Home Inspectors	339
+Home Network Installation	49
+Home Organization	193
+Home Services	19729
+Home Staging	84
+Home Theatre Installation	186
+Home Window Tinting	206
+Homeless Shelters	3
+Homeopathic	1
+Homeowner Association	15
+Honduran	6
+Honey	9
+Hong Kong Style Cafe	11
+Hookah Bars	309
+Horse Boarding	33
+Horse Equipment Shops	16
+Horse Racing	7
+Horseback Riding	85
+Hospice	79
+Hospitals	440
+Hostels	60
+Hot Air Balloons	20
+Hot Dogs	757
+Hot Pot	124
+Hot Tub & Pool	443
+Hotel bar	2
+Hotels	2625
+Hotels & Travel	6033
+House Sitters	24
+Hungarian	32
+Hunting & Fishing Supplies	41
+Hybrid Car Repair	3
+Hydro-jetting	52
+Hydroponics	11
+Hydrotherapy	37
+Hypnosis/Hypnotherapy	71
+IP & Internet Law	9
+IT Services & Computer Repair	1557
+IV Hydration	50
+Iberian	5
+Ice Cream & Frozen Yogurt	2764
+Ice Delivery	12
+Immigration Law	83
+Immunodermatologists	7
+Imported Food	460
+Indian	1489
+Indonesian	30
+Indoor Landscaping	3
+Indoor Playcentre	37
+Infectious Disease Specialists	6
+Installment Loans	46
+Insulation Installation	64
+Insurance	912
+Interior Design	736
+Interlock Systems	5
+Internal Medicine	399
+International	42
+International Grocery	147
+Internet Cafes	187
+Internet Service Providers	456
+Interval Training Gyms	227
+Investing	190
+Irish	203
+Irish Pub	109
+Irrigation	316
+Island Pub	1
+Italian	4716
+Izakaya	24
+Jails & Prisons	3
+Japanese	2716
+Japanese Curry	6
+Japanese Sweets	1
+Jazz & Blues	148
+Jet Skis	22
+Jewelry	1750
+Jewelry Repair	310
+Juice Bars & Smoothies	1723
+Junk Removal & Hauling	297
+Junkyards	5
+Karaoke	362
+Karate	58
+Kebab	78
+Keys & Locksmiths	378
+Kickboxing	73
+Kids Activities	334
+Kids Hair Salons	36
+Kiosk	2
+Kitchen & Bath	947
+Kitchen Incubators	3
+Kitchen Supplies	6
+Knife Sharpening	30
+Knitting Supplies	142
+Kombucha	7
+Korean	923
+Kosher	131
+LAN Centers	18
+Laboratory Testing	198
+Lactation Services	43
+Lakes	41
+Land Surveying	5
+Landmarks & Historical Buildings	211
+Landscape Architects	321
+Landscaping	1206
+Language Schools	35
+Laotian	26
+Laser Eye Surgery/Lasik	224
+Laser Hair Removal	672
+Laser Tag	60
+Latin American	591
+Laundromat	162
+Laundry Services	1405
+Lawn Services	63
+Lawyers	1062
+Leather Goods	250
+Lebanese	239
+Legal Services	226
+Leisure Centers	68
+Libraries	295
+Lice Services	14
+Life Coach	281
+Life Insurance	247
+Lighting Fixtures & Equipment	391
+Lighting Stores	23
+Limos	402
+Linens	2
+Lingerie	267
+Live/Raw Food	78
+Livestock Feed & Supply	37
+Local Fish Stores	29
+Local Flavor	1444
+Local Services	13932
+Lounges	1648
+Luggage	76
+Luggage Storage	3
+Macarons	68
+Machine & Tool Rental	24
+Machine Shops	12
+Magicians	56
+Mags	1342
+Mailbox Centers	321
+Makerspaces	2
+Makeup Artists	1234
+Malaysian	75
+Marinas	11
+Market Stalls	1
+Marketing	445
+Martial Arts	547
+Masonry/Concrete	391
+Mass Media	319
+Massage	2733
+Massage Schools	35
+Massage Therapy	1754
+Matchmakers	22
+Maternity Wear	72
+Mattresses	749
+Mauritius	2
+Meat Shops	515
+Mediators	21
+Medical Cannabis Referrals	27
+Medical Centers	1781
+Medical Foot Care	1
+Medical Law	22
+Medical Spas	1275
+Medical Supplies	192
+Medical Transportation	41
+Meditation Centers	101
+Mediterranean	1834
+Memory Care	17
+Men's Clothing	1832
+Men's Hair Salons	813
+Metal Fabricators	117
+Metro Stations	2
+Mexican	4618
+Middle Eastern	1317
+Middle Schools & High Schools	266
+Midwives	80
+Military Surplus	9
+Milkshake Bars	1
+Minho	1
+Mini Golf	101
+Misting System Services	10
+Mobile Dent Repair	45
+Mobile Home Dealers	8
+Mobile Home Parks	17
+Mobile Home Repair	7
+Mobile Phone Accessories	422
+Mobile Phone Repair	695
+Mobile Phones	1246
+Mobility Equipment Sales & Services	28
+Modern European	216
+Mongolian	50
+Montessori Schools	51
+Moroccan	75
+Mortgage Brokers	675
+Mortgage Lenders	163
+Mortuary Services	24
+Mosques	4
+Motorcycle Dealers	328
+Motorcycle Gear	85
+Motorcycle Rental	33
+Motorcycle Repair	315
+Motorsport Vehicle Dealers	18
+Motorsport Vehicle Repairs	22
+Mountain Biking	82
+Movers	1104
+Muay Thai	23
+Municipality	3
+Museums	327
+Music & DVDs	305
+Music & Video	1342
+Music Production Services	20
+Music Venues	1065
+Musical Instrument Services	196
+Musical Instruments & Teachers	373
+Musicians	61
+Nail Salons	5043
+Nail Technicians	278
+Nanny Services	29
+Natural Gas Suppliers	3
+Naturopathic/Holistic	492
+Nephrologists	4
+Neurologist	114
+Neuropathologists	4
+Neurotologists	12
+New Mexican Cuisine	55
+Newspapers & Magazines	51
+Nicaraguan	2
+Nightlife	13095
+Noodles	476
+Notaries	562
+Nudist	2
+Nurse Practitioner	28
+Nurseries & Gardening	662
+Nursing Schools	8
+Nutritionists	598
+Oaxacan	1
+Observatories	9
+Obstetricians & Gynecologists	461
+Occupational Therapy	113
+Office Cleaning	513
+Office Equipment	387
+Officiants	58
+Oil Change Stations	2191
+Olive Oil	20
+Oncologist	55
+Opera & Ballet	36
+Ophthalmologists	392
+Optometrists	1279
+Oral Surgeons	906
+Organic Stores	227
+Orthodontists	983
+Orthopedists	306
+Orthotics	72
+Osteopathic Physicians	62
+Osteopaths	1
+Otologists	1
+Outdoor Furniture Stores	106
+Outdoor Gear	376
+Outdoor Movies	2
+Outlet Stores	354
+Oxygen Bars	17
+Packing Services	175
+Packing Supplies	145
+Paddleboarding	30
+Pain Management	220
+Paint & Sip	103
+Paint Stores	114
+Paint-Your-Own Pottery	36
+Paintball	36
+Painters	583
+Pakistani	479
+Pan Asian	89
+Parenting Classes	22
+Parking	166
+Parks	977
+Party & Event Planning	1378
+Party Bike Rentals	10
+Party Bus Rentals	139
+Party Characters	28
+Party Equipment Rentals	272
+Party Supplies	429
+Passport & Visa Services	17
+Pasta Shops	77
+Patent Law	3
+Pathologists	5
+Patio Coverings	110
+Patisserie/Cake Shop	200
+Pawn Shops	237
+Payroll Services	115
+Pediatric Dentists	647
+Pediatricians	374
+Pedicabs	4
+Performing Arts	1085
+Perfume	13
+Periodontists	488
+Permanent Makeup	500
+Persian/Iranian	185
+Personal Assistants	54
+Personal Care Services	35
+Personal Chefs	106
+Personal Injury Law	430
+Personal Shopping	194
+Peruvian	111
+Pest Control	613
+Pet Adoption	147
+Pet Boarding	259
+Pet Breeders	27
+Pet Cremation Services	39
+Pet Groomers	1546
+Pet Hospice	15
+Pet Insurance	7
+Pet Photography	46
+Pet Services	2850
+Pet Sitting	1269
+Pet Stores	1171
+Pet Training	599
+Pet Transportation	36
+Pet Waste Removal	20
+Pets	4111
+Petting Zoos	4
+Pharmacy	423
+Phlebologists	3
+Photo Booth Rentals	148
+Photographers	961
+Photography Classes	7
+Photography Stores & Services	559
+Physical Therapy	1040
+Piano Bars	29
+Piano Services	51
+Piano Stores	16
+Pick Your Own Farms	16
+Piercing	426
+Pilates	375
+Pita	2
+Pizza	6804
+Placenta Encapsulations	13
+Planetarium	5
+Plastic Surgeons	88
+Playgrounds	306
+Playsets	3
+Plumbing	1337
+Plus Size Fashion	171
+Podiatrists	183
+Poke	172
+Pole Dancing Classes	16
+Police Departments	45
+Polish	80
+Pool & Billiards	50
+Pool & Hot Tub Service	624
+Pool Cleaners	625
+Pool Halls	224
+Pop-Up Restaurants	11
+Pop-up Shops	31
+Popcorn Shops	60
+Portuguese	249
+Post Offices	285
+Poutineries	181
+Powder Coating	31
+Prenatal/Perinatal Care	30
+Preschools	705
+Pressure Washers	251
+Pretzels	84
+Preventive Medicine	22
+Print Media	155
+Printing Services	1130
+Private Investigation	53
+Private Jet Charter	9
+Private Schools	14
+Private Tutors	134
+Process Servers	24
+Proctologists	4
+Product Design	15
+Professional Services	6276
+Professional Sports Teams	77
+Propane	95
+Property Management	1033
+Props	3
+Prosthetics	34
+Prosthodontists	42
+Psychiatrists	99
+Psychic Mediums	32
+Psychics	64
+Psychologists	56
+Pub Food	5
+Public Adjusters	4
+Public Art	10
+Public Markets	22
+Public Relations	42
+Public Services & Government	1343
+Public Transportation	213
+Pubs	2077
+Puerto Rican	26
+Pulmonologist	29
+Pumpkin Patches	13
+Qi Gong	8
+RV Dealers	136
+RV Parks	61
+RV Rental	85
+RV Repair	153
+Race Tracks	48
+Races & Competitions	36
+Racing Experience	13
+Radio Stations	99
+Radiologists	110
+Rafting/Kayaking	67
+Ramen	237
+Ranches	5
+Real Estate	5677
+Real Estate Agents	1196
+Real Estate Law	157
+Real Estate Photography	54
+Real Estate Services	1564
+Recording & Rehearsal Studios	52
+Recreation Centers	335
+Recycling Center	144
+Refinishing Services	179
+Reflexology	488
+Registration Services	84
+Registry Office	2
+Rehabilitation Center	283
+Reiki	277
+Religious Items	14
+Religious Organizations	547
+Religious Schools	34
+Reptile Shops	9
+Resorts	198
+Rest Stops	7
+Restaurant Supplies	23
+Restaurants	59371
+Retina Specialists	19
+Retirement Homes	164
+Reunion	2
+Rheumatologists	18
+Roadside Assistance	146
+Rock Climbing	33
+Rodeo	1
+Rolfing	18
+Roof Inspectors	26
+Roofing	405
+Rotisserie Chicken	1
+Rugs	153
+Russian	61
+Safe Stores	33
+Safety Equipment	5
+Sailing	8
+Salad	2531
+Salvadoran	70
+Sandblasting	8
+Sandwiches	7332
+Sauna Installation & Repair	1
+Saunas	40
+Scandinavian	11
+Scavenger Hunts	8
+Scooter Rentals	8
+Scooter Tours	3
+Scottish	4
+Screen Printing	135
+Screen Printing/T-Shirt Printing	184
+Scuba Diving	46
+Seafood	2508
+Seafood Markets	219
+Security Services	98
+Security Systems	451
+Self Storage	1020
+Self-defense Classes	42
+Senegalese	1
+Senior Centers	9
+Septic Services	105
+Service Stations	72
+Session Photography	550
+Sewing & Alterations	1040
+Sex Therapists	8
+Shades & Blinds	389
+Shanghainese	10
+Shared Office Spaces	109
+Shaved Ice	242
+Shaved Snow	17
+Shipping Centers	765
+Shoe Repair	315
+Shoe Shine	23
+Shoe Stores	1460
+Shopping	31878
+Shopping Centers	571
+Shredding Services	52
+Shutters	133
+Sicilian	3
+Siding	80
+Signmaking	311
+Singaporean	31
+Skate Parks	39
+Skate Shops	53
+Skating Rinks	98
+Ski & Snowboard Shops	44
+Ski Resorts	15
+Ski Schools	4
+Skiing	4
+Skilled Nursing	55
+Skin Care	3403
+Skydiving	15
+Sledding	3
+Sleep Specialists	63
+Slovakian	4
+Smog Check Stations	340
+Smokehouse	62
+Snorkeling	3
+Snow Removal	74
+Soba	1
+Soccer	76
+Social Clubs	197
+Social Security Law	17
+Software Development	36
+Solar Installation	164
+Solar Panel Cleaning	36
+Soul Food	316
+Soup	844
+South African	21
+Southern	536
+Souvenir Shops	68
+Spanish	193
+Speakeasies	35
+Special Education	98
+Specialty Food	4883
+Specialty Schools	1588
+Speech Therapists	60
+Spin Classes	11
+Spine Surgeons	27
+Spiritual Shop	56
+Sport Equipment Hire	1
+Sporting Goods	2165
+Sports Bars	2184
+Sports Clubs	497
+Sports Medicine	439
+Sports Psychologists	4
+Sports Wear	794
+Spray Tanning	372
+Squash	12
+Sri Lankan	41
+Stadiums & Arenas	188
+Steakhouses	1603
+Storefront Clinics	5
+Street Art	1
+Street Vendors	362
+Strip Clubs	46
+Striptease Dancers	7
+Structural Engineers	8
+Stucco Services	54
+Studio Taping	1
+Sugar Shacks	10
+Sugaring	49
+Summer Camps	280
+Sunglasses	41
+Supernatural Readings	163
+Supper Clubs	8
+Surf Schools	4
+Surf Shop	6
+Surfing	8
+Surgeons	172
+Sushi Bars	2258
+Swimming Lessons/Schools	93
+Swimming Pools	483
+Swimwear	129
+Swiss Food	2
+Synagogues	21
+Syrian	10
+Szechuan	99
+TV Mounting	95
+Tabletop Games	80
+Tableware	14
+Tacos	271
+Taekwondo	53
+Tai Chi	35
+Taiwanese	223
+Talent Agencies	39
+Tanning	927
+Tanning Beds	123
+Tapas Bars	417
+Tapas/Small Plates	480
+Tasting Classes	19
+Tattoo	852
+Tattoo Removal	151
+Tax Law	27
+Tax Services	382
+Taxidermy	3
+Taxis	272
+Tea Rooms	455
+Teacher Supplies	6
+Team Building Activities	100
+Teeth Whitening	116
+Telecommunications	311
+Television Service Providers	200
+Television Stations	40
+Tempura	1
+Tenant and Eviction Law	14
+Tennis	108
+Teppanyaki	32
+Test Preparation	93
+Tex-Mex	737
+Thai	1449
+Themed Cafes	10
+Threading Services	279
+Thrift Stores	687
+Ticket Sales	76
+Tickets	5
+Tiki Bars	16
+Tiling	299
+Tires	2337
+Title Loans	99
+Tobacco Shops	873
+Tonkatsu	1
+Tours	672
+Towing	656
+Town Car Service	33
+Town Hall	2
+Toxicologists	1
+Toy Stores	589
+Traditional Chinese Medicine	210
+Traditional Clothing	4
+Traffic Schools	13
+Traffic Ticketing Law	41
+Trailer Dealers	35
+Trailer Rental	38
+Trailer Repair	61
+Train Stations	59
+Trainers	1944
+Trains	6
+Trampoline Parks	70
+Translation Services	25
+Transmission Repair	601
+Transportation	1060
+Travel Agents	51
+Travel Services	469
+Tree Services	473
+Trinidadian	6
+Trivia Hosts	3
+Trophy Shops	36
+Truck Rental	282
+Trusts	85
+Tubing	6
+Tui Na	22
+Turkish	136
+Tuscan	5
+Tutoring Centers	177
+Udon	1
+Ukrainian	25
+Ultrasound Imaging Centers	12
+Undersea/Hyperbaric Medicine	2
+Uniforms	101
+University Housing	105
+Unofficial Yelp Events	5
+Urgent Care	459
+Urologists	65
+Used	749
+Used Bookstore	30
+Used Car Dealers	355
+Utilities	93
+Uzbek	4
+Vacation Rental Agents	38
+Vacation Rentals	106
+Valet Services	18
+Vape Shops	652
+Vascular Medicine	21
+Vegan	848
+Vegetarian	1123
+Vehicle Shipping	56
+Vehicle Wraps	146
+Venezuelan	34
+Venues & Event Spaces	2223
+Veterans Organizations	4
+Veterinarians	1285
+Video Game Stores	126
+Video/Film Production	214
+Videographers	168
+Videos & Video Game Rental	316
+Vietnamese	1286
+Vintage & Consignment	749
+Vinyl Records	140
+Virtual Reality Centers	12
+Visitor Centers	7
+Vitamins & Supplements	305
+Vocal Coach	5
+Vocational & Technical School	110
+Waffles	119
+Waldorf Schools	2
+Walk-in Clinics	148
+Walking Tours	53
+Wallpapering	17
+Watch Repair	236
+Watches	398
+Water Delivery	45
+Water Heater Installation/Repair	464
+Water Parks	14
+Water Purification Services	200
+Water Stores	56
+Water Suppliers	2
+Waterproofing	59
+Waxing	2389
+Web Design	384
+Wedding Chapels	78
+Wedding Planning	800
+Weight Loss Centers	792
+Well Drilling	7
+Wheel & Rim Repair	317
+Whiskey Bars	50
+Wholesale Stores	348
+Wholesalers	91
+Wigs	135
+Wildlife Control	52
+Wills	85
+Window Washing	334
+Windows Installation	427
+Windshield Installation & Repair	452
+Wine & Spirits	2255
+Wine Bars	1145
+Wine Tasting Classes	13
+Wine Tasting Room	46
+Wine Tours	35
+Wineries	164
+Women's Clothing	2983
+Workers Compensation Law	41
+Wraps	154
+Yelp Events	93
+Yoga	1158
+Ziplining	10
+Zoos	46

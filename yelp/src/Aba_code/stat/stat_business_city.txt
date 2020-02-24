@@ -1,0 +1,1258 @@
+, AZ	1
+110 Las Vegas, NV	1
+AGINCOURT, ON	1
+AVON, OH	1
+AZ, AZ	1
+Agincourt, ON	1
+Ahwahtukee, AZ	1
+Ahwatukee Foothills Village, AZ	1
+Ahwatukee, AZ	19
+Airdrie, AB	168
+Ajax, ON	303
+Akron, OH	465
+Alberta, AB	1
+Alburg, VT	1
+Alburgh, VT	1
+Aliquippa, PA	1
+Allegheny, PA	1
+Allentown, PA	1
+Allison Park, PA	96
+Ambridge, PA	36
+Amherst, OH	105
+Ange-Gardien, QC	1
+Anjou, QC	20
+Ansnorveldt, ON	1
+Anthem, AZ	26
+Antioch, CA	1
+Apache Junction, AZ	26
+Apache Trail, AZ	1
+Arizona, AZ	1
+Arnold, PA	4
+Arrowhead, AZ	1
+Ashburn, ON	2
+Aspinwall, PA	18
+Auburn Township, OH	1
+Auburn Twp, OH	1
+Auburn, OH	1
+Aurora, OH	115
+Aurora, ON	241
+Austin, TX	1
+Avalon, PA	8
+Avon Lake, OH	122
+Avon lake, OH	1
+Avon, OH	230
+Avondale, AZ	680
+Avondale, GA	1
+Baie-d'Urfe, QC	1
+Baie-d'Urfé, QC	2
+Bainbridge Township, OH	1
+Bainbridge, OH	9
+Bakerstown, PA	1
+Baldwin, PA	2
+Ballantyne, NC	1
+Balzac, AB	11
+Banksville, PA	1
+Barberton, OH	2
+Bath, BAS	1
+Bath, OH	4
+Bay Village, OH	46
+Beachwood , OH	1
+Beachwood, OH	289
+Beaconsfield, QC	11
+Beauharnois, QC	2
+Bedford Heights, OH	25
+Bedford Hts, OH	1
+Bedford Hts., OH	1
+Bedford, OH	112
+Bedford, QC	2
+Beeton, ON	5
+Belle Vernon, PA	6
+Belleville, WI	14
+Bellevue, PA	41
+Bellvue, PA	5
+Belmont, NC	160
+Beloeil, QC	11
+Beltline, AB	1
+Belœil, QC	1
+Ben Avon, PA	1
+Bentleyville, OH	1
+Berea, AK	1
+Berea, OH	120
+Berry, WI	1
+Bethel Park, PA	200
+Black Earth, WI	9
+Black Rock City, NV	1
+Blainville, QC	11
+Blakeney, NC	1
+Blawnox, PA	6
+Bloomfield, PA	2
+Blue Diamond, NV	12
+Blue Mounds, WI	1
+Bois-des-Filion, QC	3
+Boisbriand, QC	15
+Bolton, ON	44
+Bond Head, ON	1
+Boston Heights, OH	2
+Boston, PA	1
+Boucherville, QC	33
+Boulder City, NV	269
+Braddock, PA	11
+Bradford West Gwillimbury, ON	19
+Bradford, ON	33
+Bradfordwoods, PA	1
+Brampton, ON	1002
+Bratenahl, OH	3
+Brecksville, OH	81
+Brentwood, PA	18
+Bridgeville, PA	191
+Broadlands, IL	1
+Broadview Heights, OH	118
+Broadview Hts, OH	2
+Brook Park, OH	55
+Brooklin, ON	10
+Brookline, PA	2
+Brooklyn Heights, OH	3
+Brooklyn Hts., OH	1
+Brooklyn, NY	1
+Brooklyn, OH	70
+Brooklyn, WI	7
+Brookpark, OH	16
+Brossard, QC	177
+Brownsburg-Chatham, QC	1
+Brunswick Hills, OH	1
+Brunswick, OH	176
+Buckeye - Shaker, OH	1
+Buckeye, AZ	69
+Buena Vista, PA	1
+Burlington, ON	1
+Burton, OH	26
+Bury, XGM	1
+C Las Vegas, NV	1
+CALGARY, AB	1
+CAREFREE, AZ	1
+CARSON, PA	1
+CAVE CREEK, AZ	1
+CHARLOTTE, NC	7
+CLEVELAND, OH	1
+CONCORD, NC	2
+Caledon East, ON	9
+Caledon Village, ON	1
+Caledon, ON	33
+Calgary, AB	7735
+Calgary, AL	1
+Candiac, QC	3
+Canonsburd, PA	1
+Canonsburg, PA	162
+Canonsburg, WA	1
+Carefree, AZ	100
+Carnegie, PA	112
+Castle Shannon, PA	15
+Catawba Springs, NC	1
+Cave Creek Road, AZ	1
+Cave Creek, AZ	402
+Cave creek, AZ	1
+Cecil, PA	9
+Centennial Hills, NV	1
+Central City Village, AZ	2
+Central City, AZ	1
+Central Henderson, NV	1
+Central Oakland, PA	1
+Central, AZ	1
+Centre Island, ON	1
+Chagrin Falls, OH	196
+Chambly, QC	13
+Champaign, IL	1262
+Champlain, NY	10
+Chander, AZ	1
+Chandler, AL	1
+Chandler, AZ	4307
+Chandler, CA	1
+Chandler-Gilbert, AZ	1
+Char, NC	1
+Chardon, OH	87
+Chargrin Falls, OH	1
+Charlemagne, QC	1
+Charlotte , NC	2
+Charlotte, NC	9507
+Charlotte, SC	2
+Chatauguay, QC	1
+Chateau, PA	1
+Chateauguay, QC	11
+Chattanooga, TN	1
+Chertsey, QC	1
+Chesterland, OH	67
+Chestermere, AB	31
+Cheswick, PA	29
+Chomedey, Laval, QC	1
+Church Cove, CON	1
+Châteauguay, QC	13
+Citibank, NV	1
+City Center, NV	1
+Clairton, PA	16
+Claremont, ON	1
+Clark, NV	4
+Clarkson, ON	3
+Cleveland Heigh, OH	1
+Cleveland Height, OH	1
+Cleveland Heights, OH	212
+Cleveland Hghts., OH	1
+Cleveland Hts., OH	1
+Cleveland, OH	3605
+Cleveland, OH, OH	1
+Clinton, PA	1
+Closter, NY	1
+Clover, SC	46
+Columbia Sta, OH	1
+Columbia Station, OH	27
+Columbus, WI	1
+Communauté-Urbaine-de-Montréal, QC	2
+Concord Mills, NC	4
+Concord Township, OH	5
+Concord Twp, OH	2
+Concord, NC	856
+Concord, OH	9
+Concord, ON	125
+Cooksville, ON	2
+Copley, OH	37
+Coraopolis, PA	170
+Cornelius, NC	474
+Cote Saint Luc, QC	1
+Cote Saint-Luc, QC	7
+Cote-Saint-Luc, QC	3
+Coteau-du-Lac, QC	2
+Cottage Grove, WI	37
+Crafton, PA	12
+Cramerton, NC	12
+Cranberry Township, PA	1
+Cranberry Twp, PA	1
+Creighton, PA	3
+Crescent, PA	1
+Cross Plains, WI	24
+Crouse, NC	1
+Cuddy, PA	2
+Cuyahoga Falls, OH	354
+Cuyahoga Fls, OH	3
+Cuyahoga Heights, OH	2
+Cuyohoga Falls, OH	1
+Côte Saint-Luc, QC	3
+Côte-Saint-Luc, QC	2
+DENVER, NC	1
+Dallas, NC	27
+Dallas, TX	1
+Dane, WI	6
+Darlington, SC	1
+Davidson, NC	108
+De Forest, WI	26
+De Winton, AB	1
+De l'Eglise, QC	1
+DeForest, WI	18
+Decatur, NV	1
+Deerfield, WI	2
+Deforest, WI	10
+Delson, QC	7
+Denver, NC	115
+Desert Ridge, AZ	1
+Deux-Montagnes Regional County Municipality, QC	2
+Deux-Montagnes, QC	1
+Dewey, IL	1
+Division No. 6, AB	3
+Dollard-Des Ormeaux, QC	2
+Dollard-Des-Ormeaux, QC	28
+Dollard-des Ormeaux, QC	6
+Dollard-des-Ormeaux, QC	87
+Don Mills, ON	4
+Dormont, PA	8
+Dorval, QC	97
+Down, DOW	1
+Downsview, ON	2
+Downtown Toronto, ON	4
+Downtown, AB	1
+Downtown, PA	4
+Draper, UT	1
+Dravosburg, PA	10
+Dublin, CA	1
+Duquesne, PA	6
+Durham Regional Municipality, ON	2
+ETOBICOKE, ON	1
+East Ajax, ON	1
+East Calgary, AB	1
+East Cleveland, OH	7
+East Credit, ON	1
+East Gwilimbury, ON	1
+East Gwillimbury, ON	27
+East Hawkesbury, ON	1
+East Liberty, PA	3
+East Mc Keesport, PA	3
+East McKeesport, PA	5
+East Mesa, AZ	1
+East Mississauga, ON	2
+East Pittsburgh, PA	6
+East York, ON	161
+Eastlake, OH	74
+Edgemont, AB	1
+Edgewood, PA	2
+Edmonton, AB	2
+Eighty Four, PA	2
+El Mirage, AZ	122
+Elizabeth Township, PA	1
+Elizabeth, PA	35
+Elrama, PA	1
+Elyria, OH	208
+Emsworth, PA	3
+Enterprise, NV	7
+Erie, OH	1
+Erie, PA	1
+Estrella Village, AZ	1
+Estérel, QC	1
+Etibicoke, ON	1
+Etna, PA	12
+Etobicoke, ON	793
+Etobicoke,, ON	1
+Etobiicoke, ON	2
+Euclid, OH	106
+Evergreen, AB	1
+Export, PA	5
+FORT MILL, SC	1
+Fabreville, QC	1
+Fairlawn, OH	157
+Fairport Harbor, OH	6
+Fairview Park, OH	106
+Farmington, CT	1
+Farnham, QC	2
+Finleyville, PA	21
+Fisher, IL	2
+Fitchburg, WI	201
+Fitchburgh, WI	1
+Fithian, IL	1
+Forest Hills, PA	3
+Fort  Mill, SC	1
+Fort McDowell, AZ	11
+Fort Mcdowell, AZ	3
+Fort Mill, NC	3
+Fort Mill, SC	624
+Fort mill, SC	2
+Fountain Hills, AZ	345
+Fountain Hls, AZ	1
+Fox Chapel, PA	1
+Franklin Park, PA	2
+Frazer, PA	1
+Ft. Mill, SC	2
+GASTONIA, NC	1
+GILBERT, AZ	2
+GIlbert, AZ	1
+GLENDALE, AZ	1
+GOODYEAR, AZ	1
+Garfield Heights, OH	50
+Garfield Hts, OH	2
+Garrettsville, OH	1
+Gastonia, NC	480
+Gates Mills, OH	4
+Geauga, OH	2
+Gelndale, AZ	1
+Georgetown, ON	32
+Gibsonia, PA	113
+Gifford, IL	2
+Gilbert, AZ	3460
+Gilbert, CA	1
+Gilbert, FL	1
+Glassport, PA	6
+Glbert, AZ	1
+Glen Williams, ON	1
+Glendale Az, AZ	1
+Glendale, AZ	3542
+Glendale, CT	1
+Glenshaw, PA	51
+Godmanchester, QC	1
+Goodwood, ON	2
+Goodyear, AZ	855
+Gormley, ON	5
+Grafton, OH	16
+Grand Canyon, AZ	1
+Grand River, OH	2
+Green Tree, PA	1
+Green Valley, NV	1
+Greenfield Park, QC	20
+Greensboro, NC	1
+Greenway, AZ	1
+Grove City, OH	1
+Guadalupe, AZ	25
+HENDERSON, NV	8
+Halton Hills, ON	30
+Hamilton, ON	1
+Hampstead, QC	1
+Hampton Township, PA	13
+Harmar Township, PA	1
+Harmarville, PA	5
+Harrisbug, NC	1
+Harrisburg, NC	123
+Harrisburg,, NC	1
+Harrison City, PA	7
+Harwick, PA	1
+Heidelberg, PA	12
+Hemmingford, QC	2
+Henderson (Green Valley), NV	1
+Henderson Nevada, AL	1
+Henderson and Las vegas, NV	1
+Henderson, NV	4892
+Hendersonville, PA	1
+Henderston, NV	1
+Hendserson, NV	1
+Henryville, QC	1
+Herminie, PA	5
+Highland Heights, OH	38
+Highland Hills, OH	3
+Highland Hts, OH	1
+Highland Park, AB	1
+Higley, AZ	25
+Hinckley, OH	19
+Hiram, OH	7
+Hnederson, NV	1
+Holland Landing, ON	4
+Homer, IL	4
+Homestead, PA	119
+Hudson, FL	1
+Hudson, OH	192
+Hudson, QC	10
+Huntersville, NC	625
+Huntingdon, QC	1
+Huntington Beach, CA	1
+Huntsburg, OH	2
+Hyland Heights, OH	1
+INDIAN LAND, SC	1
+Iberville, QC	1
+Imperial, PA	21
+Independence, OH	143
+Indian Land, SC	75
+Indian Land,, SC	1
+Indian Trail, NC	300
+Indian Trail, OH	1
+Indian land, NC	1
+Indian land, SC	1
+Indianola, PA	1
+Inglewood, ON	1
+Ingomar, PA	2
+Ingram, PA	1
+Irwin, PA	74
+Ivesdale, IL	1
+Jefferson Hills, PA	14
+Joliet, IL	1
+Joliette, QC	6
+Kahnawake, QC	5
+Kannapolis, NC	100
+Kennedy Township, PA	3
+Kent, OH	254
+Kettleby, ON	2
+King City, ON	20
+King, ON	5
+Kirkland, QC	46
+Kirkland, WA	1
+Kirtland, OH	18
+Kleinburg, ON	9
+L'Assomption, QC	1
+L'assomption, QC	1
+L'ile-Bizard, QC	2
+L'ile-Perrot, QC	5
+L'Île-Bizard, QC	2
+L'Île-Perrot, QC	9
+LAS VEGAS, NV	19
+LAVEEN, AZ	1
+La Prairie, QC	21
+La Salle, QC	7
+La Vegas, NV	2
+LaGrange, OH	4
+LaSalle, QC	19
+Lachenaie, QC	2
+Lachine, QC	54
+Lachute, QC	7
+Lacolle, QC	1
+Lagrange, OH	5
+Lake Las Vegas, NV	1
+Lake Mead, NV	1
+Lake Norman, NC	1
+Lake Park, NC	2
+Lake Wylie, SC	53
+Lakewood, OH	519
+Lakewood, Oh, OH	1
+Lancaster, SC	3
+Las  Vegas, NV	5
+Las Vegas & Henderson, NV	1
+Las Vegas , NV	4
+Las Vegas East, NV	1
+Las Vegas NV, NV	1
+Las Vegas Nevada, NV	1
+Las Vegas Nv, CA	1
+Las Vegas Valley, NV	1
+Las Vegas, AZ	1
+Las Vegas, CA	2
+Las Vegas, FL	1
+Las Vegas, GA	1
+Las Vegas, NC	1
+Las Vegas, NE	1
+Las Vegas, NM	1
+Las Vegas, NV	29361
+Las Vegas, NV, NV	2
+Las Vegas, TX	1
+Las Vegas,, NV	1
+Las Vegass, NV	1
+Las Vergas, NV	1
+Las vegas, NV	14
+LasVegas, NV	2
+Lasalle, QC	73
+Laval, Pont Viau, QC	1
+Laval, QC	394
+Laval, Ste Dorothee, QC	1
+Lavaltrie, QC	1
+Laveen Village, AZ	15
+Laveen, AZ	127
+Lawrence, PA	1
+Lawrenceville, PA	4
+Le Haut-Saint-Laurent Regional County Municipality, QC	1
+Le Sud-Ouest, QC	1
+Leaside, ON	1
+Leeds, XWY	2
+Leetsdale, PA	13
+Les Coteaux, QC	1
+Les Cèdres, QC	1
+Leslieville, ON	1
+Library, PA	4
+Lindale, OH	1
+Litchfield Park, AZ	222
+Litchfield park, AZ	1
+Litchfield, AZ	4
+Litchfield, CT	1
+Litchfield, OH	6
+Locust, NC	13
+Lodi, WI	1
+London, XGL	1
+Longueuil, QC	78
+Lorain, OH	113
+Los Angeles, CA	2
+Los Vegas, NV	1
+Lowell, NC	14
+Lower Burrell, PA	22
+Lower Lawrenceville, PA	1
+Lower burrell, PA	1
+Lowesville, NC	2
+Lufkin, TX	1
+Lyndhurst, OH	118
+Lynhurst, OH	1
+MACEDONIA, OH	1
+MADISON, WI	1
+MATTHEWS, NC	1
+MESA, AZ	6
+MONROEVILLE, PA	1
+Macedonia, OH	99
+Madison, OH	1
+Madison, WI	3493
+Mahomet, IL	42
+Malton, ON	2
+Manchester, XGM	1
+Mansfield, IL	1
+Mantua, OH	15
+Maple Grove, QC	1
+Maple Heights, OH	52
+Maple, ON	59
+Maricopa, AZ	1
+Markham, ON	1766
+Markham, ON, ON	1
+Marshall, WI	3
+Marvin, NC	3
+Mascouche, QC	5
+Mathews, NC	2
+Mattews, NC	1
+Matthews, NC	749
+Mayfield Heights (Cleveland), OH	1
+Mayfield Heights, OH	162
+Mayfield Heights., OH	1
+Mayfield Hts, OH	2
+Mayfield Hts., OH	1
+Mayfield Village, OH	10
+Mayfield, OH	18
+Mc Adenville, NC	1
+Mc Donald, PA	7
+Mc Farland, WI	31
+Mc Kees Rocks, PA	37
+Mc Murray, PA	12
+McAdenville, NC	4
+McCandless Township, PA	7
+McCandless, PA	6
+McDonald, PA	9
+McFarland, WI	28
+McKees Rocks, PA	53
+McKeesRocks, PA	1
+McKeesport, PA	60
+McKnight, PA	1
+McMasterville, QC	1
+McMurray, PA	93
+McMurry, PA	3
+Mccandless Township, PA	1
+Mcdonald, PA	1
+Mcfarland, WI	3
+Mckees Rocks, PA	18
+Mckeesport, PA	8
+Mcknight, PA	1
+Mcmurray, PA	8
+Median, OH	1
+Medicine Hat, AB	1
+Medina Township, OH	3
+Medina, OH	348
+Mentor On The Lake, OH	6
+Mentor On the Lake, OH	5
+Mentor On the, OH	6
+Mentor, OH	472
+Mentor-On-The-Lake, OH	1
+Mentor-on-the-Lake, OH	9
+Mercier, QC	2
+Mesa AZ, AZ	1
+Mesa Arizona, AZ	1
+Mesa, AZ	6080
+Metro Phoenix, AZ	1
+Middleburg Heights, OH	139
+Middleburg Hts, OH	6
+Middleburg Hts., OH	1
+Middleburg, OH	1
+Middlefield, OH	28
+Middleton, WI	360
+Midland, NC	20
+Midnapore, AB	1
+Midway, PA	1
+Milford, OH	1
+Millvale, PA	19
+Milton, ON	14
+Mint  Hill, NC	1
+Mint Hill, NC	110
+Mirabel, QC	6
+Missisauga, ON	4
+Mississagua, ON	1
+Mississauaga, ON	1
+Mississauga, ON	3112
+Mississauge, ON	1
+Mississaugua, ON	1
+Mississuaga, ON	1
+Monona, WI	137
+Monongahela, PA	16
+Monoroeville, PA	2
+Monreoville, PA	1
+Monroe, NC	175
+Monroeville, PA	400
+Mont St-hilaire, QC	1
+Mont-Royal, QC	31
+Mont-Saint-Grégoire, QC	4
+Mont-Saint-Hilaire, QC	9
+Monterey Park, CA	1
+Montgomery, NC	1
+Monticello, AR	1
+Monticello, IL	35
+Montral, QC	2
+Montreal, AB	1
+Montreal, QC	152
+Montreal-Est, QC	1
+Montreal-Nord, QC	7
+Montreal-Ouest, QC	4
+Montreal-Quest, QC	1
+Montreal-West, QC	3
+Montrose, OH	2
+Montrèal, QC	1
+Montréal (Québec), QC	1
+Montréal, QC	6449
+Montréal-Est, QC	1
+Montréal-Nord, QC	3
+Montréal-Ouest, QC	4
+Montréal-West, QC	1
+Montville, OH	1
+Montéal, QC	1
+Mooers, NY	1
+Moon TWP, PA	1
+Moon Township, PA	47
+Moon Twp, PA	2
+Moon Twp., PA	1
+Moon, PA	9
+Mooresville, NC	45
+Moreland Hills, OH	10
+Morgan Hill, CA	1
+Morgan, PA	2
+Morin-Heights, QC	6
+Moseley, VA	1
+Mount Albert, ON	5
+Mount Holly, NC	48
+Mount Horeb, WI	52
+Mount Lebanon, PA	15
+Mount Oliver, PA	1
+Mount Washington, PA	1
+Mt Holly, NC	2
+Mt Lebanon, PA	8
+Mt. Holly, NC	2
+Mt. Horeb, WI	1
+Mt. Lebanon, PA	7
+Mt. Washington, PA	1
+Munhall, PA	31
+Munroe Falls, OH	20
+Murrysville (Monroeville), PA	1
+Murrysville, PA	111
+N E Las Vegas, NV	1
+N Las Vegas, NV	26
+N Ridgeville, OH	3
+N Solon, OH	1
+N W Las Vegas, NV	1
+N. Las Vegas, NV	12
+N. Olmsted, OH	2
+N. Randall, OH	1
+N. Ridgeville, OH	1
+NELLIS AFB, NV	1
+NEWMARKET, ON	1
+NORTH LAS VEGAS, NV	1
+NORTH YORK, ON	1
+Napierville, QC	2
+Nationwide, CA	1
+Nellis AFB, NV	16
+Nellis Afb, NV	3
+Nellis Air Force Base, NV	4
+Nellis, NV	1
+Nevada, NV	1
+Neville Island, PA	2
+New Eagle, PA	4
+New Glarus, WI	1
+New Kensington, PA	81
+New River, AZ	2
+New Tecumseth, ON	1
+New York, NY	1
+Newburgh Heights, OH	1
+Newbury, OH	19
+Newmarket, ON	352
+Nobleton, ON	10
+North  Ridgeville, OH	1
+North  York, ON	1
+North Braddock, PA	2
+North Carolina, NC	1
+North Charlotte, NC	1
+North Hills, PA	2
+North Huntingdon, PA	38
+North Huntington, PA	2
+North Las Vegas , NV	1
+North Las Vegas, NV	1547
+North Las Vegas, NY	1
+North Olmstead, OH	2
+North Olmsted, OH	396
+North Olmsted,, OH	1
+North Phoenix, AZ	1
+North Randall, OH	9
+North Ridgeville, OH	97
+North Royalton, OH	157
+North Scottsdale, AZ	1
+North Strabane Township, PA	1
+North Toronto, ON	1
+North Versailles, PA	63
+North York, AB	1
+North York, ON	1204
+North of Brampton, ON	1
+North york, ON	1
+NorthYork, ON	1
+Northeast Calgary, AB	1
+Northfield Center Township, OH	2
+Northfield Center, OH	4
+Northfield, OH	91
+Northwest Calgary, AB	3
+Northyork, ON	1
+Norton, OH	10
+Norval, ON	1
+Notre-Dame-De-L'ile-Perrot, QC	1
+Notre-Dame-de-l'Ile-Perrot, QC	1
+Nottingham Township, PA	1
+Novelty, OH	5
+Noyan, QC	2
+O'hara Township, PA	1
+Oak Ridges, ON	2
+Oakdale, PA	48
+Oakland, PA	4
+Oakmont, PA	54
+Oakridges, ON	1
+Oakville, ON	362
+Oakwood Village, OH	12
+Oakwood village, OH	1
+Oakwood, OH	4
+Oberlin, OH	5
+Ogden, IL	6
+Oka, QC	6
+Old Brooklyn, OH	1
+Old Port of Montreal, QC	1
+Old Scottsdale, AZ	1
+Old Town Scottsdale, AZ	2
+Oldham, XGM	1
+Olmsted Falls, OH	47
+Olmsted Township, OH	6
+Omaha, NE	1
+Orange Village, OH	10
+Orange, OH	12
+Oregon, WI	76
+Ormstown, QC	2
+Oshawa, ON	1
+Otterburn Park, QC	1
+Outremont, QC	38
+PARMA HEIGHTS, OH	1
+PEORIA, AZ	1
+PHOENIX, AZ	6
+Pahrump, NV	1
+Painesville Township, OH	2
+Painesville, OH	132
+Palgrave, ON	1
+Paoli, WI	3
+Paradise Valley, AZ	136
+Paradise, NV	24
+Parma Heights, OH	69
+Parma mid birth, OH	1
+Parma, OH	290
+Pasadena, AZ	1
+Paw Creek, NC	1
+Peninsul, OH	1
+Peninsula, CA	1
+Peninsula, OH	28
+Penn Hills Township, PA	1
+Penn Hills, PA	33
+Pennsylvania, PA	1
+Peoria, AZ	1919
+Pepper Pike, OH	19
+Pepperpike, OH	1
+Perry Twp, OH	1
+Perry, OH	6
+Peters Township, PA	2
+Pgh Int Arprt, PA	1
+Pheonix AZ, AZ	1
+Pheonix, AZ	3
+Philo, IL	3
+Phoeniix, AZ	1
+Phoenix , AZ	1
+Phoenix AZ, AZ	1
+Phoenix Metro Area, AZ	2
+Phoenix Valley, AZ	1
+Phoenix, AZ	18764
+Phoenix, AZ, AZ	2
+Phoenix, TX	2
+Phoenix,, AZ	1
+Phoenx, AZ	1
+Phoneix, AZ	1
+Phoniex, AZ	1
+Phx, AZ	1
+Pickering Ajax Whitby, ON	1
+Pickering, ON	326
+Piedmont, QC	4
+Pierrefonds, QC	50
+Pincourt, QC	2
+Pine, PA	1
+Pineville, NC	349
+Pitcairn, PA	5
+Pittsburch, PA	1
+Pittsburg, PA	8
+Pittsburgh , PA	2
+Pittsburgh, PA	7016
+Pittsburgh, VA	1
+Pleasant Hills, PA	36
+Plum Boro, PA	2
+Plum, PA	19
+Point-Claire, QC	1
+Pointe Claire, QC	3
+Pointe-Aux-Trembles, QC	5
+Pointe-Calumet, QC	2
+Pointe-Claire, QC	102
+Pointe-aux-Trembles, QC	1
+Port Credit, ON	4
+Port Vue, PA	1
+Presto, PA	5
+Promenade, NC	1
+Prévost, QC	2
+Puyallup, WA	1
+QUEEN CREEK, AZ	1
+Quartier des Spectacles, QC	1
+Queen Creek, AK	1
+Queen Creek, AZ	99
+Queen creek, AZ	1
+Queensville, ON	1
+Québec, QC	1
+RIchmond Hill, ON	1
+Rainbow Valley, AZ	1
+Rankin, PA	2
+Ranlo, NC	1
+Rantoul, IL	50
+Ravenna, OH	14
+Rawdon, QC	3
+Red Mountain, AZ	1
+Red Rock, AZ	1
+Regent Square, PA	1
+Regional Municipality of York, ON	1
+Reminderville, OH	1
+Repentigny, QC	3
+Rexdale, ON	5
+Richfield, OH	45
+Richland Township, PA	1
+Richmond Height, OH	1
+Richmond Heights, OH	27
+Richmond Hil, ON	1
+Richmond Hill, BC	1
+Richmond Hill, ON	1025
+Richmond Hts, OH	3
+Richmonhill, ON	1
+Rigaud, QC	4
+Rillton, PA	2
+Rio Verde, AZ	5
+River Drive Park, ON	1
+Robinson Township, PA	22
+Robinson Twp., PA	1
+Robinson, PA	11
+Rock Hill SC, SC	1
+Rock Hill, SC	311
+Rockey View, AB	1
+Rocky River, OH	245
+Rocky View County, AB	9
+Rocky View No. 44, AB	4
+Rocky View, AB	20
+Rocky river, OH	1
+Rockyview County, AB	1
+Rockyview, AB	2
+Rosemere, QC	8
+Rosemère, QC	18
+Ross Township, PA	7
+Ross, PA	2
+Rostraver, PA	1
+Rougemont, QC	1
+Rouses Point, NY	7
+Roxboro, QC	2
+Rural Ridge, PA	1
+Russell Twp, OH	1
+Russellton, PA	4
+S Concord, NC	1
+SCARBOROUGH, ON	1
+SCOTTSDALE, AZ	3
+SUN PRAIRIE, WI	1
+SURPRISE, AZ	1
+SW Calgary, AB	1
+Sacramento, CA	1
+Sagamore Hills, OH	9
+Sage Hill, AB	1
+Saint - Hyacinthe, QC	1
+Saint Joseph, IL	17
+Saint Laurent, QC	2
+Saint Leonard, QC	1
+Saint-Basile-Le-Grand, QC	1
+Saint-Basile-le-Grand, QC	1
+Saint-Bernard de Lacolle, QC	1
+Saint-Bernard-de-Lacolle, QC	3
+Saint-Bruno, QC	4
+Saint-Bruno-de-Montarville, QC	6
+Saint-Charles-Borromee, QC	2
+Saint-Constant, QC	6
+Saint-Eustache, QC	19
+Saint-Henri, QC	1
+Saint-Hippolyte, QC	2
+Saint-Hubert, QC	23
+Saint-Hyacinthe, QC	11
+Saint-Isidore-de-Laprairie, QC	1
+Saint-Jean-Sur-Richelieu, QC	2
+Saint-Jean-sur-Richelieu, QC	31
+Saint-Jerome, QC	9
+Saint-Jérôme, QC	18
+Saint-Lambert, QC	22
+Saint-Laurent, QC	136
+Saint-Lazare, QC	8
+Saint-Leonard, QC	32
+Saint-Léonard, QC	8
+Saint-Marc-sur-Richelieu, QC	2
+Saint-Philippe, QC	2
+Saint-Pie, QC	1
+Saint-Pierre-de-Véronne-à-Pike-River, QC	1
+Saint-Roch-de-l'Achigan, QC	1
+Saint-Sauveur, QC	50
+Saint-Sauveur-des-Monts, QC	2
+Saint-laurent, QC	1
+Sainte-Adele, QC	9
+Sainte-Adèle, AB	1
+Sainte-Adèle, QC	7
+Sainte-Anne-De-Bellevue, QC	8
+Sainte-Anne-de-Bellevue, QC	17
+Sainte-Anne-des-Plaines, QC	2
+Sainte-Catherine, QC	4
+Sainte-Dorothée, QC	1
+Sainte-Genevieve, QC	4
+Sainte-Geneviève, QC	1
+Sainte-Julie, QC	16
+Sainte-Madeleine, QC	1
+Sainte-Marguerite-Esterel, QC	1
+Sainte-Marguerite-du-Lac-Masson, QC	1
+Sainte-Marguerite-du-lac-Masson, QC	1
+Sainte-Marthe, QC	1
+Sainte-Rose, QC	1
+Sainte-Therese, QC	3
+Sainte-Thérèse, QC	11
+Sainte-Thérèse-de-Blainville, QC	1
+Sainte-thérèse, QC	1
+Saintt-Bruno-de-Montarville, QC	1
+Salaberry-De-Valleyfield, QC	3
+Salaberry-de-Valleyfield, QC	3
+Sale, XGM	1
+San Diego, CA	1
+San Tan Valley, AZ	2
+San Tan, AZ	1
+Sandy Ridge, NC	1
+Sauk City, WI	2
+Savoy, IL	79
+Scarborough, ON	1103
+Scarbrough, ON	2
+Scarobrough, ON	1
+Schaumburg, IL	1
+Schomberg, ON	10
+Schottsdale, AZ	1
+Scotesdale, AZ	1
+Scotsdale, AZ	1
+Scottadale, CA	1
+Scottdale, AZ	3
+Scottsale, AZ	1
+Scottsdale, AZ	8837
+Scottsdale, AZ, AZ	1
+Seattle, WI	1
+Sedona, AZ	1
+Seven Hills, NV	1
+Seven Hills, OH	33
+Sewickley, PA	115
+Shady Side, PA	1
+Shadyside, PA	4
+Shaker Heights, OH	66
+Shaker Hts, OH	2
+Shaler Township, PA	2
+Shaler, PA	1
+Sharon, ON	1
+Sharpsburg, PA	9
+Sheffield Lake, OH	14
+Sheffield Village, OH	29
+Sheffield, OH	11
+Shorewood Hills, WI	2
+Side Slopes, PA	1
+Sidney, IL	3
+Silver Lake, OH	2
+Snowflake, AZ	1
+Solon, OH	212
+Somerton, AZ	1
+South Amherst, OH	1
+South Charlotte, NC	1
+South Euclid, OH	79
+South Hills, PA	2
+South Las Vegas, NV	4
+South Park Township, PA	8
+South Park, PA	11
+South Russell, OH	1
+Southeast Calgary, AB	3
+Southside Flats, PA	1
+Spartanburg, SC	1
+Spring Hill City View, PA	1
+Spring Valley, NV	9
+Springdale, PA	13
+Squirrel Hill, PA	3
+St Joseph, IL	2
+St Leonard, QC	2
+St-Benoît de Mirabel, QC	1
+St-Bruno-de-Montarville, QC	3
+St-Clet, QC	1
+St-Jean-sur-Richelieu, QC	1
+St-Jerome, QC	3
+St-Laurent, QC	1
+St-Lazare, QC	1
+St-Leonard, QC	5
+St. Jean Sur Richelieu, QC	1
+St. Joseph, IL	1
+St. Leonard, QC	1
+St. Léonard, QC	1
+St. Sauveur, QC	1
+St.Pittsburgh, PA	1
+Stallings, NC	22
+Stanley, NC	19
+Ste-Dorothée, QC	1
+Ste-Rose, QC	1
+Ste-Therese-de-Blainville, QC	1
+Stetson Valley, AZ	1
+Stouffville, ON	60
+Stoughton, WI	115
+Stow, OH	234
+Streetsboro, OH	137
+Streetsville, ON	3
+Strip District, PA	1
+Strongsville, OH	379
+Strongville, OH	1
+Sturgeon, PA	2
+Summerlin South, NV	2
+Summerlin, NV	11
+Sun CIty, AZ	1
+Sun City West, AZ	104
+Sun City, AZ	258
+Sun Lakes, AZ	31
+Sun Praiie, WI	1
+Sun Prairie, WI	246
+Suncity, AZ	1
+Sunnyslope, AZ	1
+Sunrise Manor, NV	1
+Sunrise, NV	1
+Suprise, AZ	1
+Surprise Crossing, AZ	1
+Surprise, AZ	1147
+Surprise, CA	1
+Sutersville, PA	2
+Swissvale, PA	9
+TEMPE, AZ	5
+THORNHILL, ON	1
+TOLLESON, AZ	1
+TORONTO, ON	2
+Tallmadge, OH	53
+Tampa, FL	1
+Tarentum, PA	55
+Tega Cay, SC	31
+Temecula, CA	1
+Tempe , AZ	1
+Tempe, AZ	4550
+Terrebonne, QC	17
+The Promenade, AZ	1
+Thomasboro, IL	1
+Thorncliffe Park, ON	1
+Thornhil, ON	1
+Thornhill, DUR	1
+Thornhill, ON	395
+Tolleson, AZ	147
+Tolono, IL	1
+Tornto, ON	1
+Toronto Division, ON	1
+Toronto Scarborough, ON	1
+Toronto, AB	1
+Toronto, OH	1
+Toronto, ON	18904
+Toronto-Etobicoke, ON	1
+Toronto-North York, ON	1
+Toronto-West, ON	1
+Tottenham, ON	4
+Township of Concord, OH	1
+Trafford, PA	16
+Tremont, OH	2
+Troy Township, OH	1
+Tucson, AZ	1
+Turtle Creek, PA	18
+Tuscola, IL	2
+Twinsburg, OH	130
+Twinsburgh, OH	1
+Union, NJ	1
+Unionville, ON	49
+University Heights, OH	42
+University Ht, OH	1
+University Hts , OH	1
+University, NC	1
+Upper Saint Clair, PA	9
+Upper St Clair, PA	6
+Upper St. Clair, PA	6
+Uptown, OH	1
+Urbana, IL	411
+Urbana, Illinois, IL	1
+Uxbridge, ON	10
+Val-Morin, QC	2
+Valencia, PA	1
+Valley City, OH	16
+Valley View, OH	24
+Valleywide, AZ	1
+Varennes, QC	1
+Vaudreuil, QC	2
+Vaudreuil-Dorion, QC	67
+Vaughan Mills, ON	1
+Vaughan, ON	919
+Vaughn, ON	1
+Vegas, NV	1
+Venetia, PA	7
+Venise-en-Québec, QC	1
+Verdun, QC	153
+Verona, PA	61
+Verona, WI	137
+Vieux-Montréal, QC	1
+Villa Grove, IL	1
+Ville Mont-Royal, QC	1
+Ville Saint Laurent, QC	1
+Vimont, QC	6
+W Henderson, NV	1
+W Spring Valley, NV	1
+Waddell, AZ	19
+Wadsworth, OH	26
+Walton Hills, OH	5
+Warrendale, PA	1
+Warrensville Heights, OH	45
+Warrensville Hts, OH	3
+Warrensville Hts., OH	1
+Warrensville, OH	2
+Warrenville, OH	1
+Waterloo, ON	1
+Waunakee, WI	86
+Waxhaw, NC	170
+Weddington, NC	11
+Wellington, OH	1
+Wesley Chapel, NC	21
+West Elizabeth, PA	2
+West Homestead, PA	19
+West Lake, OH	1
+West Mifflin, PA	145
+West Montréal, QC	1
+West Toronto, ON	1
+West View, PA	16
+Westlake, OH	389
+Westmount, QC	97
+Weston, ON	3
+Westport, NC	1
+Westview, PA	1
+Westworld Scottsdale, AZ	1
+Wexford, PA	280
+Whiitby, ON	1
+Whitby, ON	276
+Whitchurch-Stouffville, ON	47
+White Oak, PA	34
+Whitney, NV	1
+Whtiby, ON	1
+Wickliffe, OH	72
+Wildwood, PA	3
+Wilkens Township, PA	1
+Wilkins Township, PA	1
+Wilkinsburg, PA	13
+Willoughby Hills, OH	48
+Willoughby, OH	257
+Willowdale, ON	8
+Willowick, OH	69
+Wilmerding, PA	11
+Windsor, WI	15
+Woodbridge (Vaughan), ON	1
+Woodbridge, ON	241
+Woodmere Village, OH	2
+Woodmere, OH	60
+York Regional Municipality, ON	2
+York, ON	111
+York, SC	5
+Yorkdale, ON	1
+Yorkville, ON	1
+Youngtown, AZ	65
+Zephyr, ON	1
+boulder city, NV	1
+calgary, AB	1
+cave creek, AZ	1
+charlotte, NC	3
+charlottte, NC	1
+etobicoke, ON	1
+glendale, AZ	2
+henderson, NV	3
+kirtland, OH	1
+las Vegas, NV	1
+las vegas, NV	8
+lyndhurst, OH	1
+markham, ON	1
+mesa, AZ	3
+montreal, QC	1
+moon, PA	1
+oakville, ON	1
+peoria, AZ	1
+phoenix, AZ	9
+scottsdale, AZ	5
+solon, OH	1
+south Euclid, OH	1
+springdale, PA	1
+surprise, AZ	1
+tempe, AZ	1
+toronto, ON	3
+verdun, QC	1
+Île des Soeurs, QC	1
+Île-des-Soeurs, QC	1
+​Chandler, AZ	1
