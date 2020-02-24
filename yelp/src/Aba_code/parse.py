@@ -4,7 +4,19 @@ import pandas as pd
 import gzip
 import json
 
+def loader(path):
+  """Read dataset. return iterator that dump one line string a time"""
+  if path.endswith('.gz'):
+    g = gzip.open(path, 'rb')
+  elif path.endswith('.json'):
+    g = open(path, 'r')
+  else:
+    raise RuntimeError("File not supported")
+  for l in g:
+    yield l
+
 def parse(path):
+  """Read dataset. return iterator that dump one record a time"""
   if path.endswith('.gz'):
     g = gzip.open(path, 'rb')
   elif path.endswith('.json'):

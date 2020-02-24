@@ -1,8 +1,5 @@
 business_example.json
 user_example.json
 review_example.json
-business.json.gz
-checkin.json.gz
-review.json.gz
-user.json.gz
+*.json.gz
 
