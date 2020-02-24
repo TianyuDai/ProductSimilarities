@@ -3,3 +3,5 @@
 *.dat
 *.pyc
 */*.pyc
+data/*
+data/*.*
