@@ -25,6 +25,19 @@ def bar_histogram_plot(sorted_data_sequence, title=None, x_lim=None, y_lim=None)
         ax.set_title(title)
 
 
+def scatter_bar_plot(sorted_data_sequence, title=None, x_lim=None, y_lim=None):
+    fig, ax = plt.subplots(1, 1)
+    total_count = len(sorted_data_sequence)
+    x_loc = np.arange(total_count)
+    ax.plot(x_loc, sorted_data_sequence)
+    if x_lim:
+        ax.set_xlim(x_lim)
+    if y_lim:
+        ax.set_ylim(y_lim)
+    if title:
+        ax.set_title(title)
+
+
 def bar_plot(data_dict, title=None, x_lim=None, y_lim=None):
     fig, ax = plt.subplots(1, 1)
     x_loc = np.arange(len(data_dict))

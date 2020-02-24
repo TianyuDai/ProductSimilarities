@@ -52,13 +52,13 @@ class UsersItemsStat(object):
         complete_game_id_list = False
         id_item_dict = False
         game_id_buyer_index_dict = True
-        game_id_list_training_set = True
+        game_id_list_training_set = False
         game_player_playtime_dict = False
         player_game_playtime_dict = False
         player_weight_dict = False
         game_similarity_matrix = False
         train_test_similarity_matrix = False
-        copurchase_similarity_matrix = True
+        copurchase_similarity_matrix = False
         transformed_coordinates = False
         transformed_coordinates_train = False
         train_game_id_list = False
@@ -96,10 +96,11 @@ class UsersItemsStat(object):
         # self.player_weight_dict_saver()
         # self.game_index_stat()
         # self.playtime_similarity_computation()
-        # self.purchase_similarity_computation()
+        self.purchase_similarity_computation()
+        # self.copurchase_similarity_plot()
         # self.similarity_plot()
         # self.similarity_embedding()
-        self.purchase_similarity_embedding()
+        # self.purchase_similarity_embedding()
         # self.training_similarity_embedding()
         # self.le_similarity_for_training_output()
         # self.spectral_clustering()
@@ -291,6 +292,10 @@ class UsersItemsStat(object):
         data_vector_sample = np.random.choice(data_vector, int(1e5))
         plotting.violin_plot(data_vector_sample, [0, 0.001], label='Similarity')
         # plotting.heatmap_plot(data_array, 'Game similarity', max_value=0.0008)
+        plt.show()
+
+    def copurchase_similarity_plot(self):
+        plotting.heatmap_plot(self.copurchase_similarity_matrix, max_value=0.4)
         plt.show()
 
     def parameter_saver(self):
